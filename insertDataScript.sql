@@ -354,7 +354,7 @@ INSERT INTO IngredientMeasurement (recipeID, ingredientID, measurementID, measur
 (39, 8, 9, '75'),
 (40, 92, 9, '90'),
 (40, 93, 9, '10'),
-(41, 95, 9, '30'),
+(41, 94, 9, '30'),
 (41, 95, 9, '30'),
 (41, 54, 9, '30'),
 (42, 73, 9, '90'),
