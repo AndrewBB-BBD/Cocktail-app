@@ -13,9 +13,12 @@ Assumptions:
 USE master;
 GO
 
+-- ALTER DATABASE coktailDB SET AUTO_CLOSE OFF
+
 DROP DATABASE IF EXISTS cocktailDB;
 
 CREATE DATABASE cocktailDB;
+GO
 
 USE cocktailDB;
 GO

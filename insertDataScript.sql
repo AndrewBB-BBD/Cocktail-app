@@ -201,8 +201,6 @@ INSERT INTO Recipe (flavourID, difficultyID, typeID, recipeName, recipeMethod, r
 (4, 2, 2, 'Lemon, lime and bitters', 'Rim the inside (and optionally outside) of the glass with 4 to 5 dashes of Angostura Bitters then pour lemonade and lime cordial (15–30 mL) into glass. Garnish with Lemon if desired. Has 0.2% alcohol.', '', 0, 15),
 (2, 1, 2, 'Roy Rogers', 'Mix the cola and grenadine syrup together. Pour into a glass filled with ice and garnish with a cherry.', '', 0, 5);
 
-SELECT * FROM Ingredient
-
 INSERT INTO IngredientMeasurement (recipeID, ingredientID, measurementID, measurementAmount) VALUES
 (1, 1, 9, '35'),
 (1, 2, 9, '35'),
