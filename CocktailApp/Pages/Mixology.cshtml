@@ -1,0 +1,40 @@
+@page
+@using CocktailApp.Model
+@model MixologyModel
+@functions {
+    public void test() {
+        Model.categoriesList.Clear();
+    }
+}
+
+<div class="accordion" id="accordionExample">
+    @foreach (var ingredient in Model.selectedIngredients) {
+        <button type="button" class="btn btn-primary">
+        @ingredient.IngredientName <span class="badge bg-secondary">4</span>
+        </button>
+    }
+
+    @foreach (var category in Model.categoriesList) {
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="@category.CategoryId">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#@category.CategoryName" aria-expanded="false" aria-controls="@category.CategoryName">
+                @Html.DisplayFor(name => category.CategoryName)
+            </button>
+            </h2>
+            <div id="@category.CategoryName" class="accordion-collapse collapse" aria-labelledby="@category.CategoryId" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <form method="post" asp-page="Mixology">
+                <div class="list-group">
+                    @foreach (var ingredient in Model.ingredientsList.Where(i => i.CategoryId == category.CategoryId)) {
+                        <label class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="@ingredient.IngredientId">
+                            @ingredient.IngredientName
+                        </label>
+                    }
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    }
+</div>
