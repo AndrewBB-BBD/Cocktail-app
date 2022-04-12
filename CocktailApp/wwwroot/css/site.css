@@ -16,3 +16,31 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.card-img-top {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.card {
+  margin-bottom: 1em;
+}
+
+.recipe-cards {
+  text-decoration: none;
+  color: black;
+}
+
+.recipe-cards:hover {
+  color: black;
+  border: 1px solid cornflowerblue;
+}
+
+.directions {
+  list-style: decimal inside;
+}
+
+.direction {
+  display: list-item;
+}

@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Recipe.cshtml",
+      "TargetPath": "Pages\\Recipe.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -16355,11 +16360,6 @@
     {
       "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Test.cshtml",
-      "TargetPath": "Pages\\Test.cshtml",
       "FileKind": "mvc"
     }
   ],

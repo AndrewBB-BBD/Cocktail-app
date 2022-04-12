@@ -13,11 +13,9 @@ public class FavouritesModel : PageModel
         _cocktailDBContext = cocktailDBContext;
     }
  
-    public List<Category> AllCakes = new List<Category>();
  
     public async Task<IActionResult> OnGetAsync()
     {
-        AllCakes = await _cocktailDBContext.Categories.ToListAsync();
         return Page();
     }
 }

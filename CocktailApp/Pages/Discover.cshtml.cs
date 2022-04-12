@@ -13,11 +13,51 @@ public class DiscoverModel : PageModel
         _cocktailDBContext = cocktailDBContext;
     }
  
-    public List<Category> AllCakes = new List<Category>();
+    public List<Recipe> recipesList = new List<Recipe>();
+
+    // filter options
+    public List<RecipeType> recipeTypes = new List<RecipeType>();
+    public List<FlavourProfile> flavourProfiles = new List<FlavourProfile>();
+    public List<Difficulty> difficulties = new List<Difficulty>();
+
+    public List<bool> selectedTypes = new List<bool>();
+    public string req;
  
-    public async Task<IActionResult> OnGetAsync()
+    public async Task<IActionResult> OnGet()
     {
-        AllCakes = await _cocktailDBContext.Categories.ToListAsync();
+        loadRecipes();
         return Page();
+    }
+
+    public IActionResult OnGetViewRecipe(int ID, string URL) {
+        return RedirectToPage("Recipe", new {recipeID = ID});
+    }
+
+    public void OnPost() {
+        req = Request.Form["recipeType"];
+        loadRecipes(int.Parse(req));
+    }
+
+    public void loadRecipes(int type = 0) {
+        recipesList =  _cocktailDBContext.Recipes.ToList();
+
+        if (!type.Equals(0)) {
+            recipesList = recipesList.Where(r => r.TypeId == type).ToList();
+        }
+
+        foreach (var recipe in recipesList) {
+            int start = recipe.RecipeImage.IndexOf("/file/d/") + 8;
+            int end = recipe.RecipeImage.IndexOf("/view?usp=sharing");
+            string imageURL = "https://drive.google.com/uc?id=" + recipe.RecipeImage.Substring(start, end - start);
+            recipe.RecipeImage = imageURL;
+        }
+
+        recipeTypes =  _cocktailDBContext.RecipeTypes.ToList();
+        flavourProfiles =  _cocktailDBContext.FlavourProfiles.ToList();
+        difficulties =  _cocktailDBContext.Difficulties.ToList();
+
+        foreach (var t in recipeTypes) {
+            selectedTypes.Add(false);
+        }
     }
 }
