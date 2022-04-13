@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="~/CocktailApp.styles.css" asp-append-version="true" />
 </head>
 
-<h1>@Model.req</h1>
-
 <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Search for a cocktail" aria-label="Search for a cocktail" aria-describedby="basic-addon2">
   <div class="input-group-append">
@@ -80,8 +78,8 @@
                 @foreach (var item in Model.recipeTypes)
                 {
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="recipeType" value="@item.TypeId">
-                        <label class="form-check-label" for="recipeType">@item.TypeName</label>
+                        <input class="form-check-input" type="checkbox" id="@item.TypeName" name="recipeType" value="@item.TypeId">
+                        <label class="form-check-label" for="@item.TypeName">@item.TypeName</label>
                     </div>
                 }
             </li>
@@ -89,7 +87,7 @@
                 @foreach (var item in Model.flavourProfiles)
                 {
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="@item.FlavourName" value="@item.FlavourName">
+                        <input class="form-check-input" type="checkbox" id="@item.FlavourName" name="flavourProfile" value="@item.FlavourId">
                         <label class="form-check-label" for="@item.FlavourName">@item.FlavourName</label>
                     </div>
                 }
@@ -97,14 +95,15 @@
             <li class="list-group-item">Difficulty <br>
                 @foreach (var item in Model.difficulties)
                 {
-                    //<span class="badge bg-dark">@item.DifficultyName</span>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="@item.DifficultyName" value="@item.DifficultyName">
+                        <input class="form-check-input" type="checkbox" id="@item.DifficultyName" name="difficulty" value="@item.DifficultyId">
                         <label class="form-check-label" for="@item.DifficultyName">@item.DifficultyName</label>
                     </div>
                 }
             </li>
-            <li class="list-group-item">Time</li>
+            <li class="list-group-item">Time <br>
+                Up to <input type="number" class="form-control w-25" id="number" name="time" min="@Model.minTime" max="@Model.maxTime" style="display: inline-block;"> minutes
+            </li>
         </ul>
       </div>
       <div class="modal-footer">
