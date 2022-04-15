@@ -4,7 +4,66 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Discover</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CocktailApp.styles.css" asp-append-version="true" />
+</head>
+
+<h2>Featured</h2>
+
+<div class="row">
+    <div class="col">
+        <a class="recipe-cards">
+            <div class="card">
+                <img class="card-img-featured" src="@Model.featuredRecipe.RecipeImage" alt="Card image cap">
+                 <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <p class="text-white mb-0">@Model.featuredRecipe.RecipeName</p>
+                    </div>
+                 </div>
+            </div>
+        </a>
+    </div>
 </div>
+
+<h2>Popular</h2>
+
+<div class="row">
+    @foreach (var recipe in Model.popuarList) {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <a class="recipe-cards" asp-page-handler="ViewRecipe">
+                <div class="card">
+                    <img class="card-img-top" src="@recipe.RecipeImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@recipe.RecipeName</h5>
+                        <span>
+                            <small>@recipe.RecipeTime</small>
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+<h2>Classical cocktails</h2>
+
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a class="recipe-cards" asp-page-handler="ViewRecipe">
+            <div class="card">
+                <img class="card-img-top" src="" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Recipe 1</h5>
+                    <span>
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
