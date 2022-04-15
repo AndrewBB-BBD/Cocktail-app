@@ -8,61 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CocktailApp
 build_property.RootNamespace = CocktailApp
-build_property.ProjectDir = C:\Users\bbdnet2499\Documents\Level-Ups\Java&C#\Cocktail-app\CocktailApp\
+build_property.ProjectDir = C:\Users\bbdnet2496\Documents\GitHub\Cocktail-app\CocktailApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\bbdnet2499\Documents\Level-Ups\Java&C#\Cocktail-app\CocktailApp
+build_property.MSBuildProjectDirectory = C:\Users\bbdnet2496\Documents\GitHub\Cocktail-app\CocktailApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Discover.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Discover.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzY292ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Error.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Favourites.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Favourites.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmF2b3VyaXRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Index.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Mixology.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Mixology.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWl4b2xvZ3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Privacy.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Test.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/_ViewImports.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/_ViewStart.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/bbdnet2499/Documents/Level-Ups/Java&C\#/Cocktail-app/CocktailApp/Pages/Shared/_Layout.cshtml]
+[C:/Users/bbdnet2496/Documents/GitHub/Cocktail-app/CocktailApp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-r7cmocnrhz
