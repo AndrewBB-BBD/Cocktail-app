@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+  "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,68 +16298,68 @@
   "RootNamespace": "CocktailApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Favourites.cshtml",
-      "TargetPath": "Pages\\Favourites.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Mixology.cshtml",
-      "TargetPath": "Pages\\Mixology.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Discover.cshtml",
-      "TargetPath": "Pages\\Discover.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Favourites.cshtml",
+      "TargetPath": "Pages\\Favourites.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Mixology.cshtml",
+      "TargetPath": "Pages\\Mixology.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\Pages\\Test.cshtml",
-      "TargetPath": "Pages\\Test.cshtml",
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Discover.cshtml",
+      "TargetPath": "Pages\\Discover.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Recipe.cshtml",
+      "TargetPath": "Pages\\Recipe.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

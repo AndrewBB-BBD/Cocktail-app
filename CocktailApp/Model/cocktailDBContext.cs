@@ -18,7 +18,7 @@ namespace CocktailApp.Model
 
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Difficulty> Difficulties { get; set; } = null!;
-        public virtual DbSet<Favourite> Favourites { get; set; } = null;
+        public virtual DbSet<Favourite> Favourites { get; set; } = null!;
         public virtual DbSet<FlavourProfile> FlavourProfiles { get; set; } = null!;
         public virtual DbSet<Ingredient> Ingredients { get; set; } = null!;
         public virtual DbSet<IngredientMeasurement> IngredientMeasurements { get; set; } = null!;

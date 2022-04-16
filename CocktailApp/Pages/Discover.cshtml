@@ -35,46 +35,56 @@
                 <a class="recipe-image" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId">
                 <img class="card-img-top" src="@recipe.RecipeImage" alt="Card image cap"> </a>
                 <div class="card-body">
+                    
                     <a class="recipe-text" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId">
-                    <h5 class="card-title">@recipe.RecipeName 
-                        @if (recipe.Ratings.Count > 0)
-                        {
-                            <span>
-                                @recipe.Ratings.Average(r => r.NumStars) 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F8D359" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                                </svg>
-                            </span>
-                        }
-                    </h5>
-                    <span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
-                            <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
-                        </svg> 
-                        @recipe.RecipeTime min
-                    </span>
-                    @if (!recipe.ContaintsAlcohol) {
-                        <span class="badge bg-success">Mocktail</span>
-                    }
-                    </a>
-                    <form method="post" asp-page-handler="Favourite">
-                    <button type="button" class="btn btn-link" >add</button></form>
-                    @* <form asp-route-ID="@recipe.RecipeId" asp-page-handler="Favourite" method="post">
-                    <button type="button" class="btn btn-link"> *@
-                        @* <form>
-                    <a class="recipe-heart" 
-                    method = "post"
-                    asp-page-handler="Favourite" asp-route-ID="@recipe.RecipeId">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 50 50" xml:space="preserve">
+                        <h5 class="card-title">@recipe.RecipeName 
+                            @if (recipe.Ratings.Count > 0)
+                            {
+                                <span>
+                                    @recipe.Ratings.Average(r => r.NumStars) 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F8D359" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </span>
+                            }
+                        </h5>
                         
-                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(0 0) scale(0.4 0.4)" >
-                            <path d="M 45 83.769 L 6.653 45.422 C 2.363 41.132 0 35.428 0 29.36 s 2.363 -11.771 6.653 -16.062 c 4.29 -4.291 9.994 -6.653 16.062 -6.653 c 6.068 0 11.772 2.363 16.062 6.653 L 45 19.521 l 6.223 -6.223 c 4.29 -4.291 9.995 -6.653 16.063 -6.653 s 11.771 2.363 16.062 6.653 S 90 23.293 90 29.36 s -2.363 11.771 -6.653 16.062 L 45 83.769 z M 22.715 8.645 c -5.533 0 -10.735 2.155 -14.647 6.067 S 2 23.827 2 29.36 s 2.155 10.735 6.067 14.647 L 45 80.94 l 36.933 -36.933 C 85.845 40.095 88 34.894 88 29.36 s -2.155 -10.735 -6.067 -14.648 C 78.02 10.8 72.817 8.645 67.285 8.645 c -5.533 0 -10.735 2.155 -14.648 6.067 L 45 22.35 l -7.637 -7.637 C 33.45 10.8 28.249 8.645 22.715 8.645 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(247,0,0); fill-rule: nonzero; opacity: 1;"  stroke-linecap="round" />
-                            </g>
-                        </svg>
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg> 
+                            @recipe.RecipeTime min
+                        
+                        @if (!recipe.ContaintsAlcohol) {
+                            <span class="badge bg-success">Mocktail</span>
+                        }
                     </a>
-                    </form> *@
-                    @* </button>
-                    </form> *@
+                    
+                    
+                    @* TESTING: *@
+                    @*
+                    <form method="post" asp-page-handler="Favourite">
+                    asp-route-ID="@recipe.RecipeId"
+                    <button type="submit" class="btn btn-link" >add</button></form> *@
+                    
+                    @* REAL CODE: *@
+                    @* BUG THAT I CANNOT FIX: Despite handler being present, onPost is called. See writeLine statements in terminal, after clicking the heart on Discover page. *@
+                    <span>
+                        @* I tried to fill the heart here. Couldn't get it right. Just ended up using a seperate SVG of a different filled in heart. *@
+                    <form method="post">
+                        <button type="submit" asp-page-handler="Favourite"
+                        asp-route-id= "@recipe.RecipeId"
+                        class="btn btn-link"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" fill="#ff0000" viewBox="0 0 50 50" xml:space="preserve">
+                            
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(0 0) scale(0.4 0.4)" >
+                                <path d="M 45 83.769 L 6.653 45.422 C 2.363 41.132 0 35.428 0 29.36 s 2.363 -11.771 6.653 -16.062 c 4.29 -4.291 9.994 -6.653 16.062 -6.653 c 6.068 0 11.772 2.363 16.062 6.653 L 45 19.521 l 6.223 -6.223 c 4.29 -4.291 9.995 -6.653 16.063 -6.653 s 11.771 2.363 16.062 6.653 S 90 23.293 90 29.36 s -2.363 11.771 -6.653 16.062 L 45 83.769 z M 22.715 8.645 c -5.533 0 -10.735 2.155 -14.647 6.067 S 2 23.827 2 29.36 s 2.155 10.735 6.067 14.647 L 45 80.94 l 36.933 -36.933 C 85.845 40.095 88 34.894 88 29.36 s -2.155 -10.735 -6.067 -14.648 C 78.02 10.8 72.817 8.645 67.285 8.645 c -5.533 0 -10.735 2.155 -14.648 6.067 L 45 22.35 l -7.637 -7.637 C 33.45 10.8 28.249 8.645 22.715 8.645 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(247,0,0); fill-rule: nonzero; opacity: 1;"  stroke-linecap="round" />
+                                </g>
+                            </svg>
+                        </button>
+                    </form> 
+                    </span>
+                    
                 </div>
             </div>
             
@@ -134,7 +144,7 @@
     </div>
   </div>
 </div>
-</form>
+</form> 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

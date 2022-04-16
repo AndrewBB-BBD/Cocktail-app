@@ -27,7 +27,7 @@ public class DiscoverModel : PageModel
     public int minTime;
     public int maxTime;
 
-    public async Task<IActionResult> OnGet()
+    public IActionResult OnGet()
     {
         loadRecipes(new List<string>(), new List<string>(), new List<string>());
         minTime = _cocktailDBContext.Recipes.Select(r => r.RecipeTime).Min();
@@ -40,22 +40,50 @@ public class DiscoverModel : PageModel
         return RedirectToPage("Recipe", new { recipeID = ID });
     }
 
-    public IActionResult onPostFavourite()
-    {
-        Console.WriteLine("This is being called");
+    // TESTING
 
-        // addedFavourite.RecipeId = ID;
-        // addedFavourite.UserEmail = currentUserEmail;
-        // _cocktailDBContext.Favourites.Add(addedFavourite);
-        // _cocktailDBContext.SaveChanges();
-        //return RedirectToPage("Recipe", new { recipeID = ID });
-        return RedirectToPage("Mixology");
+    // public async IActionResult onPostFavourite(int id)
+    // {
+    //     Console.WriteLine("onPostFavourite is being called");
+    //     Console.WriteLine("onPostFavourite is being called");
+    //     Console.WriteLine("onPostFavourite is being called");
+    //     Console.WriteLine("onPostFavourite is being called");
+    //     Console.WriteLine("onPostFavourite is being called");
+
+    //     return RedirectToPage("Mixology");
+    // }
+
+    // REAL ADD FAVOURITE METHOD
+
+    public async Task<IActionResult> OnPostFavouriteAsync(int id)
+    {
+        Console.WriteLine("onPostFavourite is being called");
+        Console.WriteLine("onPostFavourite is being called");
+        Console.WriteLine("onPostFavourite is being called");
+        Console.WriteLine("onPostFavourite is being called");
+        Console.WriteLine("onPostFavourite is being called");
+
+        addedFavourite.RecipeId = id;
+        addedFavourite.UserEmail = currentUserEmail;
+
+        _cocktailDBContext.Favourites.Add(addedFavourite);
+        await _cocktailDBContext.SaveChangesAsync();
+        OnGet();
+
+        return Page();
     }
+
 
 
     public void OnPost()
     {
-        Console.WriteLine("This is ACTUALLY being called");
+        // Testing
+        Console.WriteLine("onPost is ACTUALLY being called");
+        Console.WriteLine("onPost is ACTUALLY being called");
+        Console.WriteLine("onPost is ACTUALLY being called");
+        Console.WriteLine("onPost is ACTUALLY being called");
+        Console.WriteLine("onPost is ACTUALLY being called");
+
         string reqData;
 
         // recipe types
