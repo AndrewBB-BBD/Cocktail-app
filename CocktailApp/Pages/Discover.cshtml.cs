@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 namespace CocktailApp.Pages;
+using System.Data.SqlClient;
 
 public class DiscoverModel : PageModel
 {
@@ -20,7 +21,12 @@ public class DiscoverModel : PageModel
     public List<FlavourProfile> flavourProfiles = new List<FlavourProfile>();
     public List<Difficulty> difficulties = new List<Difficulty>();
 
+    // Recipe to be added to favourites
     private Favourite addedFavourite = new Favourite();
+
+    // Recipe to delete from favourites
+    private Favourite deletedFavourite = new Favourite();
+
     // Temporary - remember to delete:
     private string currentUserEmail = "test@test.com";
 
@@ -40,50 +46,8 @@ public class DiscoverModel : PageModel
         return RedirectToPage("Recipe", new { recipeID = ID });
     }
 
-    // TESTING
-
-    // public async IActionResult onPostFavourite(int id)
-    // {
-    //     Console.WriteLine("onPostFavourite is being called");
-    //     Console.WriteLine("onPostFavourite is being called");
-    //     Console.WriteLine("onPostFavourite is being called");
-    //     Console.WriteLine("onPostFavourite is being called");
-    //     Console.WriteLine("onPostFavourite is being called");
-
-    //     return RedirectToPage("Mixology");
-    // }
-
-    // REAL ADD FAVOURITE METHOD
-
-    public async Task<IActionResult> OnPostFavouriteAsync(int id)
-    {
-        Console.WriteLine("onPostFavourite is being called");
-        Console.WriteLine("onPostFavourite is being called");
-        Console.WriteLine("onPostFavourite is being called");
-        Console.WriteLine("onPostFavourite is being called");
-        Console.WriteLine("onPostFavourite is being called");
-
-        addedFavourite.RecipeId = id;
-        addedFavourite.UserEmail = currentUserEmail;
-
-        _cocktailDBContext.Favourites.Add(addedFavourite);
-        await _cocktailDBContext.SaveChangesAsync();
-        OnGet();
-
-        return Page();
-    }
-
-
-
     public void OnPost()
     {
-        // Testing
-        Console.WriteLine("onPost is ACTUALLY being called");
-        Console.WriteLine("onPost is ACTUALLY being called");
-        Console.WriteLine("onPost is ACTUALLY being called");
-        Console.WriteLine("onPost is ACTUALLY being called");
-        Console.WriteLine("onPost is ACTUALLY being called");
-
         string reqData;
 
         // recipe types
@@ -142,4 +106,82 @@ public class DiscoverModel : PageModel
         flavourProfiles = _cocktailDBContext.FlavourProfiles.ToList();
         difficulties = _cocktailDBContext.Difficulties.ToList();
     }
+
+    // ADD TO FAVOURITES METHOD
+    public async Task<IActionResult> OnPostFavouriteAsync(int recipeID)
+    {
+        addedFavourite.RecipeId = recipeID;
+        addedFavourite.UserEmail = currentUserEmail;
+
+        try
+        {
+            _cocktailDBContext.Favourites.Add(addedFavourite);
+            await _cocktailDBContext.SaveChangesAsync();
+            return Page();
+        }
+        catch (SqlException e)
+        {
+            // This exception occurs if you attempt to add the same cocktail to favourites twice.
+            Console.WriteLine("SqlException caught");
+            // Console.WriteLine("\nMessage ---\n{0}", e.Message);
+            return Page();
+        }
+        catch (NullReferenceException)
+        {
+            Console.WriteLine("NullReferenceException occured");
+            return Page();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Some other exception occured. See details below: ");
+            Console.WriteLine("\nMessage ---\n{0}", ex.Message);
+            return Page();
+        }
+        finally
+        {
+            OnGet();
+        }
+    }
+
+    public async Task<IActionResult> OnPostDeleteFromFavourites(int recipeID)
+    {
+        // Baby warning: If you click "Remove from favourites" it works. If you navigate to a new page like "Favourites" or "Discover" and then click back you get a "Confirm Form Resubmission" error.
+        deletedFavourite.RecipeId = recipeID;
+        deletedFavourite.UserEmail = currentUserEmail;
+
+        try
+        {
+            _cocktailDBContext.Favourites.Remove(deletedFavourite);
+            await _cocktailDBContext.SaveChangesAsync();
+
+            return Page();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            Console.WriteLine("Cocktail does not exist in Favourites table in DB");
+
+            return Page();
+        }
+        catch (NullReferenceException)
+        {
+            Console.WriteLine("NullReferenceException occured");
+
+            return Page();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Some other exception occured. See details below: ");
+            Console.WriteLine("\nMessage ---\n{0}", ex.Message);
+
+            return Page();
+        }
+        finally
+        {
+            OnGet();
+        }
+
+
+    }
+
+
 }
