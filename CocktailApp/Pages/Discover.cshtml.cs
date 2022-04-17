@@ -131,6 +131,7 @@ public class DiscoverModel : PageModel
             Console.WriteLine("NullReferenceException occured");
             return Page();
         }
+
         catch (Exception ex)
         {
             Console.WriteLine("Some other exception occured. See details below: ");

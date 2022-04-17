@@ -5,7 +5,7 @@
       @foreach (var recipe in Model.usersFavouritesList) {
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             
-            <div class="card" style = "margin-bottom: 5px">
+            <div class="card" style = "margin-bottom: 10px">
                 <a class="card-link-to-recipe" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId">
                 <img class="card-img-top" src="@recipe.RecipeImage" alt="Card image">
                 <div class="card-body" style = "padding: 16px 16px 12px 16px">
