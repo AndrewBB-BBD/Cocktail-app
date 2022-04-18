@@ -32,6 +32,10 @@ public class DiscoverModel : PageModel
 
     // Temporary - remember to delete:
     private string currentUserEmail = "test@test.com";
+    // private string currentUserEmail = "test1@test.com";
+    // private string currentUserEmail = "test2@test.com";
+    // private string currentUserEmail = "test3@test.com";
+    // private string currentUserEmail = "test4@test.com";
 
     // public bool isFavourite;
     public int minTime;
