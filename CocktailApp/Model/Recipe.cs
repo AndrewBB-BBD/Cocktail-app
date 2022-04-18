@@ -20,7 +20,7 @@ namespace CocktailApp.Model
         public string? RecipeDescription { get; set; }
         public string RecipeMethod { get; set; } = null!;
         public int RecipeTime { get; set; }
-        public string? RecipeImage { get; set; } = null!;
+        public string RecipeImage { get; set; } = null!;
         public bool ContaintsAlcohol { get; set; }
 
         public virtual Difficulty Difficulty { get; set; } = null!;

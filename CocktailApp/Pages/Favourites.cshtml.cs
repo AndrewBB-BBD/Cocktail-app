@@ -14,6 +14,7 @@ public class FavouritesModel : PageModel
     }
 
     public List<Favourite> favouritesList = new List<Favourite>();
+    // List of user's favourite recipes
     public List<Recipe> usersFavouritesList = new List<Recipe>();
 
     // Recipe to delete from favourites

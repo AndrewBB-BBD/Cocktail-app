@@ -21,12 +21,12 @@ public class RecipeModel : PageModel
     public List<string> recipeTags = new List<string>();
     public List<IngredientMeasurement> ingredients = new List<IngredientMeasurement>();
     public List<string>? directions;
-    public List<Favourite>? favourites;
+    public List<Favourite>? favouritesList;
+    // List of User's Favourite Recipes
+    public List<Recipe> userFavourites = new List<Recipe>();
 
-    // Recipe to be added to favourites
+    // Recipe to be added to / deleted from favourites
     private Favourite addedFavourite = new Favourite();
-
-    // Recipe to delete from favourites
     private Favourite deletedFavourite = new Favourite();
 
     // Temporary - remember to delete:
@@ -34,6 +34,8 @@ public class RecipeModel : PageModel
 
     public async Task<IActionResult> OnGetAsync(int recipeID)
     {
+        favouritesList = await _cocktailDBContext.Favourites.ToListAsync();
+
         // get recipe and tags
         recipe = await _cocktailDBContext.Recipes.Where(r => r.RecipeId == recipeID).FirstAsync();
         recipeTags.Add(_cocktailDBContext.RecipeTypes.Where(t => t.TypeId == recipe.TypeId).First().TypeName);
@@ -54,11 +56,11 @@ public class RecipeModel : PageModel
 
         if (recipe.RecipeImage is not null)
         {
-            Console.WriteLine(recipe.RecipeImage);
-            Console.WriteLine(recipe.RecipeImage);
-            Console.WriteLine(recipe.RecipeImage);
-            Console.WriteLine(recipe.RecipeImage);
-            Console.WriteLine(recipe.RecipeImage);
+            // Console.WriteLine(recipe.RecipeImage);
+            // Console.WriteLine(recipe.RecipeImage);
+            // Console.WriteLine(recipe.RecipeImage);
+            // Console.WriteLine(recipe.RecipeImage);
+            // Console.WriteLine(recipe.RecipeImage);
 
             // image URL
             int start = recipe.RecipeImage.IndexOf("/file/d/") + 8;
@@ -69,7 +71,15 @@ public class RecipeModel : PageModel
             // Sometimes "file/d/" and "/view?usp=sharing", are already omitted then we get an error, hence the write line statements above for testing.
         }
 
-        favourites = await _cocktailDBContext.Favourites.ToListAsync();
+        // Get user's favourite recipes list
+        foreach (Favourite entry in favouritesList)
+        {
+            if (entry.UserEmail == currentUserEmail)
+            {
+                userFavourites.Add(_cocktailDBContext.Recipes.Where(r => r.RecipeId == entry.RecipeId).First());
+            }
+        }
+
 
         return Page();
     }

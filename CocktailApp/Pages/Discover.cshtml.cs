@@ -15,29 +15,44 @@ public class DiscoverModel : PageModel
     }
 
     public List<Recipe> recipesList = new List<Recipe>();
+    private List<Favourite> favouritesList = new List<Favourite>();
 
     // filter options
     public List<RecipeType> recipeTypes = new List<RecipeType>();
     public List<FlavourProfile> flavourProfiles = new List<FlavourProfile>();
     public List<Difficulty> difficulties = new List<Difficulty>();
 
+
     // Recipe to be added to favourites
     private Favourite addedFavourite = new Favourite();
-
     // Recipe to delete from favourites
     private Favourite deletedFavourite = new Favourite();
+    // List of User's Favourite Recipes
+    public List<Recipe> userFavourites = new List<Recipe>();
 
     // Temporary - remember to delete:
     private string currentUserEmail = "test@test.com";
 
+    // public bool isFavourite;
     public int minTime;
     public int maxTime;
 
-    public IActionResult OnGet()
+    public async Task<IActionResult> OnGetAsync()
     {
+        favouritesList = await _cocktailDBContext.Favourites.ToListAsync();
         loadRecipes(new List<string>(), new List<string>(), new List<string>());
         minTime = _cocktailDBContext.Recipes.Select(r => r.RecipeTime).Min();
         maxTime = _cocktailDBContext.Recipes.Select(r => r.RecipeTime).Max();
+
+        // Get user's favourite recipes list
+        foreach (Favourite entry in favouritesList)
+        {
+            if (entry.UserEmail == currentUserEmail)
+            {
+                userFavourites.Add(_cocktailDBContext.Recipes.Where(r => r.RecipeId == entry.RecipeId).First());
+            }
+        }
+
         return Page();
     }
 
@@ -69,6 +84,7 @@ public class DiscoverModel : PageModel
             selectedDifficulties = reqData.Split(',').ToList();
 
         loadRecipes(selectedRecipeTypes, selectedFlavourProfiles, selectedDifficulties);
+
     }
 
 
@@ -117,6 +133,7 @@ public class DiscoverModel : PageModel
         {
             _cocktailDBContext.Favourites.Add(addedFavourite);
             await _cocktailDBContext.SaveChangesAsync();
+            // isFavourite = true;
             return Page();
         }
         catch (SqlException e)
@@ -140,10 +157,11 @@ public class DiscoverModel : PageModel
         }
         finally
         {
-            OnGet();
+            await OnGetAsync();
         }
     }
 
+    // REMOVE FROM FAVOURITES 
     public async Task<IActionResult> OnPostDeleteFromFavourites(int recipeID)
     {
         // Baby warning: If you click "Remove from favourites" it works. If you navigate to a new page like "Favourites" or "Discover" and then click back you get a "Confirm Form Resubmission" error.
@@ -154,7 +172,7 @@ public class DiscoverModel : PageModel
         {
             _cocktailDBContext.Favourites.Remove(deletedFavourite);
             await _cocktailDBContext.SaveChangesAsync();
-
+            // isFavourite = false;
             return Page();
         }
         catch (DbUpdateConcurrencyException)
@@ -178,7 +196,7 @@ public class DiscoverModel : PageModel
         }
         finally
         {
-            OnGet();
+            await OnGetAsync();
         }
 
 
