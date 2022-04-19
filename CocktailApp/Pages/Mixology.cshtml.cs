@@ -13,10 +13,11 @@ public class MixologyModel : PageModel
     {
         _cocktailDBContext = cocktailDBContext;
     }
- 
+
     public List<Category> categoriesList = new List<Category>();
     public List<Ingredient> ingredientsList = new List<Ingredient>();
     public List<Ingredient> selectedIngredients = new List<Ingredient>();
+    public bool IsChecked { get; set; }
  
     public async Task<IActionResult> OnGetAsync()
     {
@@ -24,4 +25,14 @@ public class MixologyModel : PageModel
         ingredientsList = await _cocktailDBContext.Ingredients.ToListAsync();
         return Page();
     }
+
+//method called when "find coctail" button clicked
+     public IActionResult OnPost()
+    {
+        //gets a string that represents all the check boxes and their values
+        string results = Request.Form["isChecked"];
+        //redirect to page with string
+        return RedirectToPage("./MixResult", results);
+    }
+
 }

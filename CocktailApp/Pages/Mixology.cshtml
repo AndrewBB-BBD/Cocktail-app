@@ -7,10 +7,15 @@
     }
 }
 
+<h3>Mixology</h3>
+<h5>Select all the ingredients you want to use and we tell you if such a recipe exists.</h5> 
+<i><p><b>Tip:</b> to get more recipe results you should select less ingredients.</p></i>
+
+<form method="post">
 <div class="accordion" id="accordionExample">
     @foreach (var ingredient in Model.selectedIngredients) {
         <button type="button" class="btn btn-primary">
-        @ingredient.IngredientName <span class="badge bg-secondary">4</span>
+        @ingredient.IngredientName
         </button>
     }
 
@@ -23,18 +28,18 @@
             </h2>
             <div id="@category.CategoryName" class="accordion-collapse collapse" aria-labelledby="@category.CategoryId" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <form method="post" asp-page="Mixology">
                 <div class="list-group">
                     @foreach (var ingredient in Model.ingredientsList.Where(i => i.CategoryId == category.CategoryId)) {
                         <label class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="@ingredient.IngredientId">
-                            @ingredient.IngredientName
+                            <input class="form-check-input me-1" name="@ingredient.IngredientId" asp-for="IsChecked" asp-route-id="@ingredient.IngredientId"/> @ingredient.IngredientName.ToLower()
                         </label>
                     }
                 </div>
-                </form>
-            </div>
             </div>
         </div>
+        </div>
     }
+    <input type="submit" value="Find cocktail"/>
 </div>
+        
+</form>
