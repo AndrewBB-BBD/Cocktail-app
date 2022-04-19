@@ -1,6 +1,8 @@
 ﻿using CocktailApp.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.IO;
+using System.Text;
 
 namespace CocktailApp.Pages;
 
@@ -19,10 +21,13 @@ public class IndexModel : PageModel
     public List<Recipe> popuarList = new List<Recipe>();
     public List<Rating> ratingList = new List<Rating>();
     public Recipe featuredRecipe = new Recipe();
+    public List<RecipeType> recipeTypeList = new List<RecipeType>();
+
     public void OnGet()
     {
         recipesList = _cocktailDBContext.Recipes.ToList();
         ratingList = _cocktailDBContext.Ratings.ToList();
+        recipeTypeList = _cocktailDBContext.RecipeTypes.ToList();
         GetPopularRecipes();
         GetFeatured();
     }
@@ -37,11 +42,33 @@ public class IndexModel : PageModel
             recipe.RecipeImage = imageURL;
         }
 
-        foreach (var rating in ratingList)
+        Dictionary<Recipe, Double> recipeAvrg = new Dictionary<Recipe, Double>();
+
+        foreach (var recipe in recipesList)
         {
-            if (rating.NumStars >= 4 && popuarList.Count < 15)
+            var ratingList = recipe.Ratings.ToList();
+            if(ratingList != null && ratingList.Count != 0) {
+                var averageRating = 0.0;
+                foreach (var rating in ratingList)
+                {
+                    averageRating += (double)rating.NumStars;
+                }
+                averageRating /= ratingList.Count;
+
+                recipeAvrg.Add(recipe, averageRating);
+            }       
+        }
+
+        foreach (KeyValuePair<Recipe, Double> recipe in recipeAvrg.OrderByDescending(key => key.Value))
+        {
+            if(popuarList.Count >= 15)
             {
-                popuarList.Add(_cocktailDBContext.Recipes.Find(rating.RecipeId));
+                break;
+            }
+
+            if(recipe.Value >= 4)
+            {
+                popuarList.Add(recipe.Key);
             }
         }
         return popuarList;
@@ -49,15 +76,24 @@ public class IndexModel : PageModel
 
     public Recipe GetFeatured()
     {
-
         Random rnd = new Random();
-        int intRecRandom = rnd.Next(1, popuarList.Count());  // creates a number between 1 and number of recipes
 
-        Console.WriteLine(intRecRandom);
+        String path = AppDomain.CurrentDomain.BaseDirectory + @"OfTheDay";
+
+        int temprand = rnd.Next(0, popuarList.Count());
+
+        while(System.IO.File.ReadAllText(path).Length != 0 && int.Parse(System.IO.File.ReadAllText(path)) == temprand)
+        {
+            temprand = rnd.Next(1, popuarList.Count());
+        }
+
+        System.IO.File.WriteAllText(path, temprand.ToString());
 
         var tempRecipe = new Recipe();
 
-        tempRecipe.RecipeId = intRecRandom;
+        tempRecipe = popuarList[temprand];
+
+        //tempRecipe.RecipeId = int.Parse(System.IO.File.ReadAllText(path));
 
         featuredRecipe = _cocktailDBContext.Recipes.Find(tempRecipe.RecipeId);
 
