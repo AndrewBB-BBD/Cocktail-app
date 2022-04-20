@@ -18,6 +18,7 @@ namespace CocktailApp.Model
 
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Difficulty> Difficulties { get; set; } = null!;
+        public virtual DbSet<Favourite> Favourites { get; set; } = null!;
         public virtual DbSet<FlavourProfile> FlavourProfiles { get; set; } = null!;
         public virtual DbSet<Ingredient> Ingredients { get; set; } = null!;
         public virtual DbSet<IngredientMeasurement> IngredientMeasurements { get; set; } = null!;
@@ -32,7 +33,7 @@ namespace CocktailApp.Model
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=VIANKAN\\SQLEXPRESS;Database=cocktailDB;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=ANELB\\SQLEXPRESS;Database=cocktailDB;Trusted_Connection=True;");
             }
         }
 
@@ -61,6 +62,7 @@ namespace CocktailApp.Model
                     .IsUnicode(false)
                     .HasColumnName("difficultyName");
             });
+
 
             modelBuilder.Entity<FlavourProfile>(entity =>
             {
@@ -145,6 +147,34 @@ namespace CocktailApp.Model
                     .IsUnicode(false)
                     .HasColumnName("measurementName");
             });
+
+
+            modelBuilder.Entity<Favourite>(entity =>
+            {
+
+                entity.HasKey(e => new { e.UserEmail, e.RecipeId });
+
+                entity.ToTable("Favourite");
+
+                entity.Property(e => e.UserEmail)
+                    .HasMaxLength(320)
+                    .IsUnicode(false)
+                    .HasColumnName("userEmail");
+
+                entity.Property(e => e.RecipeId).HasColumnName("recipeID");
+
+                entity.HasOne(d => d.Recipe)
+                   .WithMany(p => p.Favourites)
+                   .HasForeignKey(d => d.RecipeId)
+                   .OnDelete(DeleteBehavior.ClientSetNull);
+
+                entity.HasOne(d => d.UserLogin)
+                    .WithMany(p => p.Favourites)
+                    .HasForeignKey(d => d.UserEmail)
+                    .OnDelete(DeleteBehavior.ClientSetNull);
+
+            });
+
 
             modelBuilder.Entity<Rating>(entity =>
             {
@@ -275,22 +305,22 @@ namespace CocktailApp.Model
                     .IsUnicode(false)
                     .HasColumnName("username");
 
-                entity.HasMany(d => d.Recipes)
-                    .WithMany(p => p.UserEmails)
-                    .UsingEntity<Dictionary<string, object>>(
-                        "Favourite",
-                        l => l.HasOne<Recipe>().WithMany().HasForeignKey("RecipeId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Favourite__recip__412EB0B6"),
-                        r => r.HasOne<UserLogin>().WithMany().HasForeignKey("UserEmail").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Favourite__userE__403A8C7D"),
-                        j =>
-                        {
-                            j.HasKey("UserEmail", "RecipeId");
+                // entity.HasMany(d => d.Recipes)
+                //     .WithMany(p => p.UserEmails)
+                //     .UsingEntity<Dictionary<string, object>>(
+                //         "Favourite",
+                //         l => l.HasOne<Recipe>().WithMany().HasForeignKey("RecipeId").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Favourite__recip__412EB0B6"),
+                //         r => r.HasOne<UserLogin>().WithMany().HasForeignKey("UserEmail").OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK__Favourite__userE__403A8C7D"),
+                //         j =>
+                //         {
+                //             j.HasKey("UserEmail", "RecipeId");
 
-                            j.ToTable("Favourite");
+                //             j.ToTable("Favourite");
 
-                            j.IndexerProperty<string>("UserEmail").HasMaxLength(320).IsUnicode(false).HasColumnName("userEmail");
+                //             j.IndexerProperty<string>("UserEmail").HasMaxLength(320).IsUnicode(false).HasColumnName("userEmail");
 
-                            j.IndexerProperty<int>("RecipeId").HasColumnName("recipeID");
-                        });
+                //             j.IndexerProperty<int>("RecipeId").HasColumnName("recipeID");
+                //         });
             });
 
             OnModelCreatingPartial(modelBuilder);

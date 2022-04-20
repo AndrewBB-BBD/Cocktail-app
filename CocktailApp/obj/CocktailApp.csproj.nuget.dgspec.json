@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {}
+    "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {
+    "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
         "projectName": "CocktailApp",
-        "projectPath": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
-        "packagesPath": "C:\\Users\\bbdnet2499\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\obj\\",
+        "projectPath": "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2507\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bbdnet2499\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\bbdnet2507\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +47,7 @@
           "dependencies": {
             "Microsoft.AspNet.WebPages.Data": {
               "target": "Package",
-              "version": "[3.2.7, )"
+              "version": "[3.2.8, )"
             },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
@@ -53,6 +60,10 @@
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -103,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

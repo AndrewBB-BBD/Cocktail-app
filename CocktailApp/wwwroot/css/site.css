@@ -23,18 +23,16 @@ body {
   object-fit: cover;
 }
 
-.card {
+.recipe-image,
+.recipe-text {
   margin-bottom: 1em;
-}
-
-.recipe-cards {
   text-decoration: none;
   color: black;
 }
 
-.recipe-cards:hover {
+.recipe-image:hover,
+.recipe-text:hover {
   color: black;
-  border: 1px solid cornflowerblue;
 }
 
 .directions {
@@ -45,6 +43,19 @@ body {
   display: list-item;
 }
 
+#discoverMenu .form-control {
+  width: 63vw;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#discoverMenu #searchBtn {
+  border-radius: 0;
+}
+
+#discoverMenu button {
+  width: 2vw;
+}
 .btnContainer {
   margin-top: 15px;
   width: 100%;
@@ -78,24 +89,7 @@ body {
   display: block;
 }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: blue;
-  cursor: pointer;
-  color: white;
-}
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: darkblue;
-  color: white;
-}
-
 .mixologyBtn {
   margin-top: 20px;
 }
 
-/* Mixology CSS end */
