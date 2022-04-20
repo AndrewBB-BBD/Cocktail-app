@@ -25,6 +25,7 @@ public class MixResultModel : PageModel
 
     public List<int> recIds = new List<int>();
 
+    public List<Rating> ratings = new List<Rating>();
     public string noIngredientSelectedMsg = "";
  
 
@@ -39,6 +40,7 @@ public class MixResultModel : PageModel
         
         fullIngredMeasList = await _cocktailDBContext.IngredientMeasurements.ToListAsync();
         fullRecipesList = await _cocktailDBContext.Recipes.ToListAsync();
+        ratings = _cocktailDBContext.Ratings.ToList();
 
         foreach(var item in userSelectedIds) {
 
