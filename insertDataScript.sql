@@ -11,6 +11,13 @@ the value 'whole', 'part' or 'parts' are used it is not followed by 'of'
 USE cocktailDB;
 GO
 
+INSERT INTO UserLogin (userEmail, username, userPassword, salt) VALUES
+('test@test.com', 'andrewB', HASHBYTES('SHA2_512', 'AndrewBPassword'), NEWID()),
+('test1@test.com', 'andrewC', HASHBYTES('SHA2_512', 'AndrewCPassword'), NEWID()),
+('test2@test.com', 'andrewD', HASHBYTES('SHA2_512', 'AndrewDPassword'), NEWID()),
+('test3@test.com', 'andrewE', HASHBYTES('SHA2_512', 'AndrewEPassword'), NEWID()),
+('test4@test.com', 'andrewF', HASHBYTES('SHA2_512', 'AndrewFPassword'), NEWID());
+
 INSERT INTO Category (categoryName) VALUES
 ('Alcohol'),
 ('Mix'),
@@ -204,6 +211,7 @@ INSERT INTO Recipe (flavourID, difficultyID, typeID, recipeName, recipeMethod, r
 (4, 2, 2, 'Lemon, lime and bitters', 'Rim the inside (and optionally outside) of the glass with 4 to 5 dashes of Angostura Bitters then pour lemonade and lime cordial (15–30 mL) into glass. Garnish with Lemon if desired. Has 0.2% alcohol.', 'https://drive.google.com/file/d/1rCykHeWL-4Jt6l0SI8QTeh3vviGkYv93/view?usp=sharing', 0, 15),
 (2, 1, 2, 'Roy Rogers', 'Mix the cola and grenadine syrup together. Pour into a glass filled with ice and garnish with a cherry.', 'https://drive.google.com/file/d/1DnoVjJ3CBak0LuY_UW3oRS-NCIG3NJLH/view?usp=sharing', 0, 5);
 
+
 INSERT INTO IngredientMeasurement (recipeID, ingredientID, measurementID, measurementAmount) VALUES
 (1, 1, 9, '35'),
 (1, 2, 9, '35'),
@@ -374,3 +382,16 @@ INSERT INTO IngredientMeasurement (recipeID, ingredientID, measurementID, measur
 (45, 5, 4, '4'),
 (46, 52, 9, '125'),
 (46, 96, 9, '125');
+
+INSERT INTO Rating ( userEmail, recipeID, numStars, ratingComment) VALUES
+('test@test.com', 1, 4, 'Fabulous');
+
+INSERT INTO Favourite (userEmail, recipeID) VALUES
+('test@test.com', 1),
+('test@test.com', 2),
+('test@test.com', 18),
+('test@test.com', 45),
+('test1@test.com', 13),
+('test2@test.com', 14),
+('test2@test.com', 16),
+('test4@test.com', 45);

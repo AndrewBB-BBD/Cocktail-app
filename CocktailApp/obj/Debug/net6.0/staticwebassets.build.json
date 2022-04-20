@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "nrPfKF/W759tzbzAcRqg2Or4upURtG221zDF/AmeuYE=",
+=======
+  "Hash": "T+fNmJHQZo64aOCbUR2Pa2Ux2cm5lOuQd6+65YgS7nM=",
+>>>>>>> main
   "Source": "CocktailApp",
   "BasePath": "_content/CocktailApp",
   "Mode": "Default",
@@ -10,17 +14,17 @@
     {
       "Name": "CocktailApp\\wwwroot",
       "Source": "CocktailApp",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\css\\site.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\css\\site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -31,13 +35,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\css\\site.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\favicon.ico",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\favicon.ico",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -48,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\favicon.ico"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\js\\site.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\js\\site.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -65,13 +69,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\js\\site.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -82,13 +86,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -99,13 +103,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -116,13 +120,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -133,13 +137,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -150,13 +154,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -167,13 +171,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -184,13 +188,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -201,13 +205,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -218,13 +222,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -235,13 +239,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -252,13 +256,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -269,13 +273,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -286,13 +290,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -303,13 +307,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -320,13 +324,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -337,13 +341,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -354,13 +358,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -371,13 +375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -388,13 +392,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -405,13 +409,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -422,13 +426,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -439,13 +443,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -456,13 +460,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -473,13 +477,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -490,13 +494,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -507,13 +511,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -524,13 +528,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -541,13 +545,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -558,13 +562,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -575,13 +579,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -592,13 +596,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -609,13 +613,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -626,13 +630,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -643,13 +647,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -660,13 +664,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -677,13 +681,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -694,13 +698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -711,13 +715,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -728,13 +732,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -745,13 +749,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -762,13 +766,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -779,13 +783,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -796,13 +800,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -813,13 +817,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -830,13 +834,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -847,13 +851,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -864,13 +868,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -881,13 +885,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -898,13 +902,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -915,13 +919,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -932,13 +936,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -949,13 +953,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -966,13 +970,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -983,13 +987,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1000,13 +1004,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1017,13 +1021,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1034,13 +1038,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.3\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CocktailApp.styles.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CocktailApp.styles.css",
       "SourceId": "CocktailApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "CocktailApp.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1055,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CocktailApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CocktailApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CocktailApp.bundle.scp.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CocktailApp.bundle.scp.css",
       "SourceId": "CocktailApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "CocktailApp.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,9 +1072,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CocktailApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CocktailApp.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\css\\favicon.png",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
@@ -1089,9 +1094,12 @@
     },
     {
       "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\css\\site.css",
+=======
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\css\\site.css",
+>>>>>>> main
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1105,10 +1113,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\favicon.ico",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1122,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\js\\site.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1139,10 +1147,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1156,10 +1164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1173,10 +1181,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1190,10 +1198,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1207,10 +1215,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1224,10 +1232,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1241,10 +1249,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1258,10 +1266,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1275,10 +1283,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1292,10 +1300,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1309,10 +1317,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1326,10 +1334,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1343,10 +1351,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1360,10 +1368,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1377,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1394,10 +1402,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1411,10 +1419,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1428,10 +1436,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1445,10 +1453,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1462,10 +1470,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1479,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1496,10 +1504,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1513,10 +1521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1530,10 +1538,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1547,10 +1555,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1564,10 +1572,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1581,10 +1589,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1598,10 +1606,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1615,10 +1623,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1632,10 +1640,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1649,10 +1657,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1666,10 +1674,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1683,10 +1691,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1700,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1717,10 +1725,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1734,10 +1742,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1751,10 +1759,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1768,10 +1776,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1785,10 +1793,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1802,10 +1810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1819,10 +1827,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1836,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1853,10 +1861,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1870,10 +1878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1887,10 +1895,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1904,10 +1912,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1921,10 +1929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1938,10 +1946,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1955,10 +1963,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1972,10 +1980,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1989,10 +1997,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2006,10 +2014,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2023,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2040,10 +2048,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2057,10 +2065,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2074,10 +2082,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2091,10 +2099,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",
       "BasePath": "_content/CocktailApp",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
