@@ -10,7 +10,7 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     private readonly cocktailDBContext _cocktailDBContext;
-    public string loggedInUser {get; set;} = "";
+    public string loggedInUser { get; set; } = "";
 
     public IndexModel(ILogger<IndexModel> logger, cocktailDBContext cocktailDBContext)
     {
@@ -23,12 +23,13 @@ public class IndexModel : PageModel
     public List<Rating> ratingList = new List<Rating>();
     public Recipe featuredRecipe = new Recipe();
 
-    public void OnGet()
+    public void OnGet(string userName)
     {
         recipesList = _cocktailDBContext.Recipes.ToList();
         ratingList = _cocktailDBContext.Ratings.ToList();
         GetPopularRecipes();
         GetFeatured();
+        loggedInUser = userName;
     }
 
     public IActionResult OnGetViewRecipe(int ID, string URL)
@@ -51,7 +52,8 @@ public class IndexModel : PageModel
         foreach (var recipe in recipesList)
         {
             var ratingList = recipe.Ratings.ToList();
-            if(ratingList != null && ratingList.Count != 0) {
+            if (ratingList != null && ratingList.Count != 0)
+            {
                 var averageRating = 0.0;
                 foreach (var rating in ratingList)
                 {
@@ -60,17 +62,17 @@ public class IndexModel : PageModel
                 averageRating /= ratingList.Count;
 
                 recipeAvrg.Add(recipe, averageRating);
-            }       
+            }
         }
 
         foreach (KeyValuePair<Recipe, Double> recipe in recipeAvrg.OrderByDescending(key => key.Value))
         {
-            if(popuarList.Count >= 15)
+            if (popuarList.Count >= 15)
             {
                 break;
             }
 
-            if(recipe.Value >= 4)
+            if (recipe.Value >= 4)
             {
                 popuarList.Add(recipe.Key);
             }
@@ -86,8 +88,5 @@ public class IndexModel : PageModel
 
         return featuredRecipe;
 
-    public void OnGet(string userName)
-    {
-        loggedInUser = userName;
     }
 }
