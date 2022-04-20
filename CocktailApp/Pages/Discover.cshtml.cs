@@ -20,6 +20,7 @@ public class DiscoverModel : PageModel
         flavourProfiles = _cocktailDBContext.FlavourProfiles.ToList();
         difficulties = _cocktailDBContext.Difficulties.ToList();
         favouritesList = _cocktailDBContext.Favourites.ToList();
+        ratings = _cocktailDBContext.Ratings.ToList();
     }
 
     // public List<Recipe> recipesList = new List<Recipe>();
@@ -51,6 +52,8 @@ public class DiscoverModel : PageModel
     public int minTime;
     public int maxTime;
     public string searchResults = "";
+
+    public List<Rating> ratings = new List<Rating>();
 
     public IActionResult OnGet()
     {

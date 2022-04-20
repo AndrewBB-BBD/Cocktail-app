@@ -36,10 +36,12 @@ public class RecipeModel : PageModel
     // private string currentUserEmail = "test3@test.com";
     // private string currentUserEmail = "test4@test.com";
 
+    public List<Rating> ratings = new List<Rating>();
+
     public async Task<IActionResult> OnGetAsync(int recipeID)
     {
         favouritesList = await _cocktailDBContext.Favourites.ToListAsync();
-
+        ratings = _cocktailDBContext.Ratings.ToList();
 
         // get recipe and tags
         recipe = await _cocktailDBContext.Recipes.Where(r => r.RecipeId == recipeID).FirstAsync();
