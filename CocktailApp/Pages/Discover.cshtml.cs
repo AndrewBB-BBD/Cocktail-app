@@ -19,10 +19,10 @@ public class DiscoverModel : PageModel
         recipeTypes = _cocktailDBContext.RecipeTypes.ToList();
         flavourProfiles = _cocktailDBContext.FlavourProfiles.ToList();
         difficulties = _cocktailDBContext.Difficulties.ToList();
-        favouritesList = _cocktailDBContext.Favourites.ToList();
+
     }
 
-    
+
 
     // public List<Recipe> recipesList = new List<Recipe>();
     private List<Favourite> favouritesList = new List<Favourite>();
@@ -54,9 +54,10 @@ public class DiscoverModel : PageModel
     public int maxTime;
     public string searchResults = "";
 
-    public IActionResult OnGet()
+    public async Task<IActionResult> OnGetAsync()
     {
         loadRecipesAndInfo(recipesList);
+        favouritesList = await _cocktailDBContext.Favourites.ToListAsync();
 
         // Get user's favourite recipes list
         foreach (Favourite entry in favouritesList)
@@ -221,7 +222,7 @@ public class DiscoverModel : PageModel
         }
         finally
         {
-            OnGet();
+            await OnGetAsync();
         }
     }
 
@@ -259,7 +260,7 @@ public class DiscoverModel : PageModel
 
         finally
         {
-            OnGet();
+            await OnGetAsync();
         }
 
 
