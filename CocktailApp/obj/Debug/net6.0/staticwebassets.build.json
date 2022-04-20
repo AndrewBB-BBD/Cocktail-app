@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "nrPfKF/W759tzbzAcRqg2Or4upURtG221zDF/AmeuYE=",
-=======
   "Hash": "T+fNmJHQZo64aOCbUR2Pa2Ux2cm5lOuQd6+65YgS7nM=",
->>>>>>> main
   "Source": "CocktailApp",
   "BasePath": "_content/CocktailApp",
   "Mode": "Default",
@@ -1075,28 +1071,7 @@
       "OriginalItemSpec": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CocktailApp.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\css\\favicon.png",
-      "SourceId": "CocktailApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\",
-      "BasePath": "_content/CocktailApp",
-      "RelativePath": "css/favicon.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\favicon.png"
-    },
-    {
-      "Identity": "C:\\Users\\bbdnet2499\\Documents\\Level-Ups\\Java&C#\\Cocktail-app\\CocktailApp\\wwwroot\\css\\site.css",
-=======
       "Identity": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\css\\site.css",
->>>>>>> main
       "SourceId": "CocktailApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\wwwroot\\",

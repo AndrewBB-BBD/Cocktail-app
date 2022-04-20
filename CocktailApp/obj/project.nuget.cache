@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Suesx2rh+eNVRol6oJshnWYsfYqtwNM9NGZgL6EolAZK17tgjIqXQNazjJHCwcoAQPgeSJ7oWoee4CiHIHIFKg==",
+  "dgSpecHash": "OIFcNKsBUy60jo7lnUje4KWc+ay1nha0megUfTX6IsJnM5o/1arM01m7ZyEs0cH7gGsRaQl2h38oc8YbrT8WAA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+  "projectFilePath": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bbdnet2496\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\bbdnet2496\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -208,12 +208,6 @@
     "C:\\Users\\bbdnet2496\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

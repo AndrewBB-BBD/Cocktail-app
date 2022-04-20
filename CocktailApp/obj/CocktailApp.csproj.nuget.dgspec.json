@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {}
+    "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {
+    "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
         "projectName": "CocktailApp",
-        "projectPath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+        "projectPath": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
         "packagesPath": "C:\\Users\\bbdnet2496\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\",
+        "outputPath": "C:\\Users\\bbdnet2496\\Documents\\GitHub\\Cocktail-app\\CocktailApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bbdnet2496\\AppData\\Roaming\\NuGet\\NuGet.Config",
