@@ -3,8 +3,89 @@
 @{
     ViewData["Title"] = "Home page";
 }
+@functions {
+    public void test() {
+        Model.recipesList.Clear();
+    }
+}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CocktailApp.styles.css" asp-append-version="true" />
+</head>
+
+<h2>Cocktail of the day</h2>
+
+<div class="row">
+    <div class="container">
+        <div class="jumbotron text-center col-md-12">
+            <a class="recipe-cards" asp-page-handler="ViewRecipe" asp-route-ID="@Model.featuredRecipe.RecipeId">
+                <div class="card">
+                    <div class="leftcontent">
+                        <img class="img-fluid" src="@Model.featuredRecipe.RecipeImage" alt="Card image cap">
+                    </div>
+                    <div class="rightcontent">
+                        <h3>@Model.featuredRecipe.RecipeName</h3>
+                        <span>@Model.featuredRecipe.RecipeDescription</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="jumbotron text-center col-md-4">
+
+        </div>
+    </div>
+</div>
+
+<h2>Most Rated</h2>
+
+<div class="row">
+    @foreach (var recipe in Model.popuarList) {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <a class="recipe-cards" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId">
+                <div class="card">
+                    <img class="card-img-top" src="@recipe.RecipeImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@recipe.RecipeName</h5>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg> 
+                            @recipe.RecipeTime min
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+<br />
+<br />
+
+<h2>Quick and easy Recipes</h2>
+
+<div class="row">
+    @foreach (var recipe in Model.recipesList.Where(i => i.DifficultyId ==1 && i.RecipeTime <= 10)) {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+            <a class="recipe-cards" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId">
+                <div class="card">
+                    <img class="card-img-top" src="@recipe.RecipeImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@recipe.RecipeName</h5>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg> 
+                            @recipe.RecipeTime min
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
 </div>

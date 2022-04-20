@@ -10835,26 +10835,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bbdnet2507\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\bbdnet2544\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+      "projectUniqueName": "C:\\Users\\bbdnet2544\\Documents\\Grad Stuff\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
       "projectName": "CocktailApp",
-      "projectPath": "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
-      "packagesPath": "C:\\Users\\bbdnet2507\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bbdnet2507\\Documents\\GIT\\Cocktail-app\\CocktailApp\\obj\\",
+      "projectPath": "C:\\Users\\bbdnet2544\\Documents\\Grad Stuff\\Cocktail-app\\CocktailApp\\CocktailApp.csproj",
+      "packagesPath": "C:\\Users\\bbdnet2544\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bbdnet2544\\Documents\\Grad Stuff\\Cocktail-app\\CocktailApp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\bbdnet2507\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\bbdnet2544\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10949,7 +10942,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
       }
     }
   },
