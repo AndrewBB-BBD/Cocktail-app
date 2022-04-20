@@ -40,6 +40,7 @@ public class RecipeModel : PageModel
     {
         favouritesList = await _cocktailDBContext.Favourites.ToListAsync();
 
+
         // get recipe and tags
         recipe = await _cocktailDBContext.Recipes.Where(r => r.RecipeId == recipeID).FirstAsync();
         recipeTags.Add(_cocktailDBContext.RecipeTypes.Where(t => t.TypeId == recipe.TypeId).First().TypeName);
@@ -60,12 +61,6 @@ public class RecipeModel : PageModel
 
         if (recipe.RecipeImage is not null)
         {
-            // Console.WriteLine(recipe.RecipeImage);
-            // Console.WriteLine(recipe.RecipeImage);
-            // Console.WriteLine(recipe.RecipeImage);
-            // Console.WriteLine(recipe.RecipeImage);
-            // Console.WriteLine(recipe.RecipeImage);
-
             // image URL
             int start = recipe.RecipeImage.IndexOf("/file/d/") + 8;
             int end = recipe.RecipeImage.IndexOf("/view?usp=sharing");

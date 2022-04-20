@@ -9,12 +9,20 @@ using System.Data.SqlClient;
 public class DiscoverModel : PageModel
 {
     private readonly cocktailDBContext _cocktailDBContext;
+    public List<Recipe> recipesList = new List<Recipe>();
+
+    // sets the DB context and list of recipes as well as the recipe types, flavours, difficulties, and times for the filter menu
     public DiscoverModel(cocktailDBContext cocktailDBContext)
     {
         _cocktailDBContext = cocktailDBContext;
+        recipesList = _cocktailDBContext.Recipes.ToList();
+        recipeTypes = _cocktailDBContext.RecipeTypes.ToList();
+        flavourProfiles = _cocktailDBContext.FlavourProfiles.ToList();
+        difficulties = _cocktailDBContext.Difficulties.ToList();
+        favouritesList = _cocktailDBContext.Favourites.ToList();
     }
 
-    public List<Recipe> recipesList = new List<Recipe>();
+    // public List<Recipe> recipesList = new List<Recipe>();
     private List<Favourite> favouritesList = new List<Favourite>();
 
     // filter options
@@ -22,13 +30,16 @@ public class DiscoverModel : PageModel
     public List<FlavourProfile> flavourProfiles = new List<FlavourProfile>();
     public List<Difficulty> difficulties = new List<Difficulty>();
 
+    // selected filters
+    public List<string> selectedRecipeTypes = new List<string>();
+    public List<string> selectedFlavourProfiles = new List<string>();
+    public List<string> selectedDifficulties = new List<string>();
 
     // Recipe to be added to favourites
     private Favourite addedFavourite = new Favourite();
     // Recipe to delete from favourites
     private Favourite deletedFavourite = new Favourite();
-    // List of User's Favourite Recipes
-    public List<Recipe> userFavourites = new List<Recipe>();
+    public List<Recipe> userFavouritesList = new List<Recipe>();
 
     // Temporary - remember to delete:
     private string currentUserEmail = "test@test.com";
@@ -37,64 +48,98 @@ public class DiscoverModel : PageModel
     // private string currentUserEmail = "test3@test.com";
     // private string currentUserEmail = "test4@test.com";
 
-    // public bool isFavourite;
     public int minTime;
     public int maxTime;
+    public string searchResults = "";
 
-    public async Task<IActionResult> OnGetAsync()
+    public IActionResult OnGet()
     {
-        favouritesList = await _cocktailDBContext.Favourites.ToListAsync();
-        loadRecipes(new List<string>(), new List<string>(), new List<string>());
-        minTime = _cocktailDBContext.Recipes.Select(r => r.RecipeTime).Min();
-        maxTime = _cocktailDBContext.Recipes.Select(r => r.RecipeTime).Max();
+        loadRecipesAndInfo(recipesList);
 
         // Get user's favourite recipes list
         foreach (Favourite entry in favouritesList)
         {
             if (entry.UserEmail == currentUserEmail)
             {
-                userFavourites.Add(_cocktailDBContext.Recipes.Where(r => r.RecipeId == entry.RecipeId).First());
+                userFavouritesList.Add(_cocktailDBContext.Recipes.Where(r => r.RecipeId == entry.RecipeId).First());
             }
         }
-
         return Page();
     }
 
+    // redirects the user to a recipe page when they select a recipe card
     public IActionResult OnGetViewRecipe(int ID, string URL)
     {
         return RedirectToPage("Recipe", new { recipeID = ID });
     }
 
+    // executes when the user searches or filters recipes and retrieves the request data
     public void OnPost()
     {
-        string reqData;
+        string reset = Request.Form["reset"];
+        string searchTerm = Request.Form["searchTerm"];
 
-        // recipe types
-        reqData = Request.Form["recipeType"];
-        List<string> selectedRecipeTypes = new List<string>();
-        if (reqData != null)
-            selectedRecipeTypes = reqData.Split(',').ToList();
+        if (reset != null)
+        {    // reset 
+            loadRecipesAndInfo(_cocktailDBContext.Recipes.ToList());
+        }
+        else if (!string.IsNullOrEmpty(searchTerm))
+        {     // search
+            loadRecipesAndInfo(_cocktailDBContext.Recipes.ToList());
+            findRecipes(searchTerm);
+        }
+        else
+        {    // filter
+            string reqData;
 
-        // flavour profiles
-        reqData = Request.Form["flavourProfile"];
-        List<string> selectedFlavourProfiles = new List<string>();
-        if (reqData != null)
-            selectedFlavourProfiles = reqData.Split(',').ToList();
+            // recipe types
+            reqData = Request.Form["recipeType"];
+            if (reqData != null)
+                selectedRecipeTypes = reqData.Split(',').ToList();
 
-        // difficulty
-        reqData = Request.Form["difficulty"];
-        List<string> selectedDifficulties = new List<string>();
-        if (reqData != null)
-            selectedDifficulties = reqData.Split(',').ToList();
+            // flavour profiles
+            reqData = Request.Form["flavourProfile"];
+            if (reqData != null)
+                selectedFlavourProfiles = reqData.Split(',').ToList();
 
-        loadRecipes(selectedRecipeTypes, selectedFlavourProfiles, selectedDifficulties);
+            // difficulty
+            reqData = Request.Form["difficulty"];
+            if (reqData != null)
+                selectedDifficulties = reqData.Split(',').ToList();
 
+            // time
+            reqData = Request.Form["time"];
+            if (reqData != null)
+                filterRecipes(selectedRecipeTypes, selectedFlavourProfiles, selectedDifficulties, int.Parse(reqData), recipesList);
+            else
+                filterRecipes(selectedRecipeTypes, selectedFlavourProfiles, selectedDifficulties, 0, recipesList);
+        }
     }
 
-
-    public void loadRecipes(List<string> selectedRecipeTypes, List<string> selectedFlavourProfiles, List<string> selectedDifficulties)
+    // loads all recipes and their data
+    public void loadRecipesAndInfo(List<Recipe> recipes)
     {
-        recipesList = _cocktailDBContext.Recipes.ToList();
+        recipesList = recipes;
+        minTime = recipesList.Select(r => r.RecipeTime).Min();
+        maxTime = recipesList.Select(r => r.RecipeTime).Max();
+
+        foreach (var recipe in recipesList)
+        {
+            int start = recipe.RecipeImage.IndexOf("/file/d/") + 8;
+            int end = recipe.RecipeImage.IndexOf("/view?usp=sharing");
+            string imageURL = "https://drive.google.com/uc?id=" + recipe.RecipeImage.Substring(start, end - start);
+            recipe.RecipeImage = imageURL;
+        }
+    }
+
+    // filters the recipes displayed according to the user's selection
+    public void filterRecipes(List<string> selectedRecipeTypes, List<string> selectedFlavourProfiles, List<string> selectedDifficulties, int time, List<Recipe> recipes)
+    {
+
+        if (recipes.Count() > 0)
+            loadRecipesAndInfo(recipes);
+        else
+            loadRecipesAndInfo(_cocktailDBContext.Recipes.ToList());
 
         if (selectedRecipeTypes.Count > 0)
         {
@@ -114,18 +159,20 @@ public class DiscoverModel : PageModel
             ).ToList();
         }
 
-        foreach (var recipe in recipesList)
-        {
-            int start = recipe.RecipeImage.IndexOf("/file/d/") + 8;
-            int end = recipe.RecipeImage.IndexOf("/view?usp=sharing");
-            string imageURL = "https://drive.google.com/uc?id=" + recipe.RecipeImage.Substring(start, end - start);
-            recipe.RecipeImage = imageURL;
-        }
+        if (time > 0)
+            recipesList = recipesList.Where(r => r.RecipeTime <= time).ToList();
 
-        recipeTypes = _cocktailDBContext.RecipeTypes.ToList();
-        flavourProfiles = _cocktailDBContext.FlavourProfiles.ToList();
-        difficulties = _cocktailDBContext.Difficulties.ToList();
+        searchResults = recipesList.Count().ToString() + " recipes found.";
     }
+
+    // searches for a recipe with the specified search term in its name
+    public void findRecipes(string searchTerm)
+    {
+        recipesList = recipesList.Where(r => r.RecipeName.ToUpper().Contains(searchTerm.ToUpper())).ToList();
+        searchResults = recipesList.Count().ToString() + " results for '" + searchTerm + "'.";
+    }
+
+
 
     // ADD TO FAVOURITES METHOD
     public async Task<IActionResult> OnPostFavouriteAsync(int recipeID)
@@ -137,7 +184,6 @@ public class DiscoverModel : PageModel
         {
             _cocktailDBContext.Favourites.Add(addedFavourite);
             await _cocktailDBContext.SaveChangesAsync();
-            // isFavourite = true;
             return Page();
         }
         catch (SqlException e)
@@ -161,7 +207,7 @@ public class DiscoverModel : PageModel
         }
         finally
         {
-            await OnGetAsync();
+            OnGet();
         }
     }
 
@@ -176,7 +222,6 @@ public class DiscoverModel : PageModel
         {
             _cocktailDBContext.Favourites.Remove(deletedFavourite);
             await _cocktailDBContext.SaveChangesAsync();
-            // isFavourite = false;
             return Page();
         }
         catch (DbUpdateConcurrencyException)
@@ -200,11 +245,10 @@ public class DiscoverModel : PageModel
         }
         finally
         {
-            await OnGetAsync();
+            OnGet();
         }
 
 
     }
-
 
 }
