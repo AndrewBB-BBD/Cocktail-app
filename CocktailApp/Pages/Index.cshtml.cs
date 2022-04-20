@@ -27,7 +27,6 @@ public class IndexModel : PageModel
     {
         recipesList = _cocktailDBContext.Recipes.ToList();
         ratingList = _cocktailDBContext.Ratings.ToList();
-        recipeTypeList = _cocktailDBContext.RecipeTypes.ToList();
         GetPopularRecipes();
         GetFeatured();
     }
