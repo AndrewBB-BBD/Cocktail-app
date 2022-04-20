@@ -20,6 +20,6 @@ namespace CocktailApp.Model
 
         public virtual ICollection<Recipe> Recipes { get; set; }
 
-        public virtual ICollection<Favourite> Favourites { get; set; }
+        public virtual ICollection<Favourite>? Favourites { get; set; }
     }
 }

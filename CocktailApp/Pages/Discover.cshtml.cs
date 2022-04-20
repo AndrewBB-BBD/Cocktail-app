@@ -19,9 +19,11 @@ public class DiscoverModel : PageModel
         recipeTypes = _cocktailDBContext.RecipeTypes.ToList();
         flavourProfiles = _cocktailDBContext.FlavourProfiles.ToList();
         difficulties = _cocktailDBContext.Difficulties.ToList();
-        favouritesList = _cocktailDBContext.Favourites.ToList();
+
         ratings = _cocktailDBContext.Ratings.ToList();
     }
+
+
 
     // public List<Recipe> recipesList = new List<Recipe>();
     private List<Favourite> favouritesList = new List<Favourite>();
@@ -55,9 +57,10 @@ public class DiscoverModel : PageModel
 
     public List<Rating> ratings = new List<Rating>();
 
-    public IActionResult OnGet()
+    public async Task<IActionResult> OnGetAsync()
     {
         loadRecipesAndInfo(recipesList);
+        favouritesList = await _cocktailDBContext.Favourites.ToListAsync();
 
         // Get user's favourite recipes list
         foreach (Favourite entry in favouritesList)
@@ -65,6 +68,11 @@ public class DiscoverModel : PageModel
             if (entry.UserEmail == currentUserEmail)
             {
                 userFavouritesList.Add(_cocktailDBContext.Recipes.Where(r => r.RecipeId == entry.RecipeId).First());
+                // Console.WriteLine("HERE");
+                // Console.WriteLine("HERE");
+                // Console.WriteLine("HERE");
+                // Console.WriteLine("HERE");
+                // Console.WriteLine(userFavouritesList is null);
             }
         }
         return Page();
@@ -183,6 +191,13 @@ public class DiscoverModel : PageModel
         addedFavourite.RecipeId = recipeID;
         addedFavourite.UserEmail = currentUserEmail;
 
+        Console.WriteLine("ADD TO FAVOURITES CALLED");
+        Console.WriteLine("ADD TO FAVOURITES CALLED");
+        Console.WriteLine("ADD TO FAVOURITES CALLED");
+        Console.WriteLine("ADD TO FAVOURITES CALLED");
+        Console.WriteLine("ADD TO FAVOURITES CALLED");
+
+
         try
         {
             _cocktailDBContext.Favourites.Add(addedFavourite);
@@ -210,7 +225,7 @@ public class DiscoverModel : PageModel
         }
         finally
         {
-            OnGet();
+            await OnGetAsync();
         }
     }
 
@@ -220,6 +235,12 @@ public class DiscoverModel : PageModel
         // Baby warning: If you click "Remove from favourites" it works. If you navigate to a new page like "Favourites" or "Discover" and then click back you get a "Confirm Form Resubmission" error.
         deletedFavourite.RecipeId = recipeID;
         deletedFavourite.UserEmail = currentUserEmail;
+
+        Console.WriteLine("DELETE FROM FAVOURITES CALLED");
+        Console.WriteLine("DELETE FROM FAVOURITES CALLED");
+        Console.WriteLine("DELETE FROM FAVOURITES CALLED");
+        Console.WriteLine("DELETE FROM FAVOURITES CALLED");
+        Console.WriteLine("DELETE FROM FAVOURITES CALLED");
 
         try
         {
@@ -239,16 +260,10 @@ public class DiscoverModel : PageModel
 
             return Page();
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine("Some other exception occured. See details below: ");
-            Console.WriteLine("\nMessage ---\n{0}", ex.Message);
 
-            return Page();
-        }
         finally
         {
-            OnGet();
+            await OnGetAsync();
         }
 
 
