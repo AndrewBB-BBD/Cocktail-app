@@ -23,18 +23,16 @@ body {
   object-fit: cover;
 }
 
-.card {
+.recipe-image,
+.recipe-text {
   margin-bottom: 1em;
-}
-
-.recipe-cards {
   text-decoration: none;
   color: black;
 }
 
-.recipe-cards:hover {
+.recipe-image:hover,
+.recipe-text:hover {
   color: black;
-  border: 1px solid cornflowerblue;
 }
 
 .directions {
