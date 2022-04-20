@@ -1,1 +1,183 @@
 @page
+@model DiscoverModel
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Discover</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CocktailApp.styles.css" asp-append-version="true" />
+</head>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search for a cocktail" aria-label="Search for a cocktail" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </button>
+  </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM3.5 5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </button>
+</div>
+
+<div class="row">
+      @foreach (var recipe in Model.recipesList) {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+            
+            <div class="card" style = "margin-bottom: 10px">
+                <a class="recipe-image" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId">
+                <img class="card-img-top" src="@recipe.RecipeImage" alt="Card image cap"> </a>
+
+                <form method="post">
+                <div class="card-body">
+                    <a class="recipe-text" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId"
+                     >
+                        <h5 class="card-title" style="display: flex; justify-content: space-between; margin: 0">
+                            @recipe.RecipeName 
+
+                            @* RATING FEATURE NOT IMPLEMENTED YET: *@
+                            @* @if (recipe.Ratings.Count > 0)
+                            {
+                                <span>
+                                    @recipe.Ratings.Average(r => r.NumStars) 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#F8D359" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                    </svg>
+                                </span>
+                            } *@
+                            
+                    
+                            @if (@Model.userFavourites.Any(favourite => favourite.RecipeId == recipe.RecipeId)){
+
+                                @* <button type="submit" class="btn btn-danger" 
+                                style="padding: 0 6px 0 6px; font-size: 15px; margin-top: 5px; border: 0" 
+                                asp-page-handler="DeleteFromFavourites" 
+                                asp-route-recipeID= "@recipe.RecipeId"> 
+                                - Remove from favourites
+                                </button> *@
+
+                                <button type="submit" class="btn btn-link" asp-page-handler="DeleteFromFavourites"
+                                asp-route-recipeID= "@recipe.RecipeId"
+                                style="padding: 0"> 
+
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                width="30" height="30" viewBox="0 0 30 30" >
+                                <defs>
+                                </defs>
+                                <g transform="translate(15 15) scale(0.77 0.77)" width="30" height="30">
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-19.35 -19.35) scale(0.43 0.43)" >
+                                    <path d="M 84.646 11.504 C 75.554 1.233 58.335 -0.041 45 13.074 C 31.665 -0.041 14.446 1.233 5.354 11.504 c -9.671 10.926 -5.609 31.318 7.123 47.615 C 18.931 67.38 34.874 80.832 45 86.481 c 10.126 -5.649 26.069 -19.101 32.523 -27.362 C 90.255 42.822 94.318 22.43 84.646 11.504 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                                </g>
+                                </svg>
+                                </button>
+
+                                
+                            } else {
+
+                                @* <button type="submit" class="btn btn-success" style="padding: 0 6px 0 6px; font-size: 15px; margin-top: 5px; border: 0"
+                                asp-page-handler="Favourite"
+                                asp-route-recipeID= "@recipe.RecipeId"> 
+                                + Add to favourites
+                                </button> *@
+
+                                
+                            @* I tried to fill the heart here. Couldn't get it right. Just ended up using a seperate SVG of a different filled in heart. *@
+
+                                <button type="submit" class="btn btn-link" asp-page-handler="Favourite"
+                                asp-route-recipeID= "@recipe.RecipeId" style="padding: 0"> 
+                                <svg xmlns="http://www.w3.org/2000/svg"  
+                                width="30" height="30"  viewBox="0 0 25 25" fill="red">
+                                <defs>
+                                </defs>
+                                <g transform="translate(12.5 13.5) scale(0.7 0.7)" width="30" height="30">
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-17.55 -17.55) scale(0.39 0.39)" >
+                                    <path d="M 45 83.769 L 6.653 45.422 C 2.363 41.132 0 35.428 0 29.36 s 2.363 -11.771 6.653 -16.062 c 4.29 -4.291 9.994 -6.653 16.062 -6.653 c 6.068 0 11.772 2.363 16.062 6.653 L 45 19.521 l 6.223 -6.223 c 4.29 -4.291 9.995 -6.653 16.063 -6.653 s 11.771 2.363 16.062 6.653 S 90 23.293 90 29.36 s -2.363 11.771 -6.653 16.062 L 45 83.769 z M 22.715 8.645 c -5.533 0 -10.735 2.155 -14.647 6.067 S 2 23.827 2 29.36 s 2.155 10.735 6.067 14.647 L 45 80.94 l 36.933 -36.933 C 85.845 40.095 88 34.894 88 29.36 s -2.155 -10.735 -6.067 -14.648 C 78.02 10.8 72.817 8.645 67.285 8.645 c -5.533 0 -10.735 2.155 -14.648 6.067 L 45 22.35 l -7.637 -7.637 C 33.45 10.8 28.249 8.645 22.715 8.645 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(247,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                </g>
+                                </g>
+                                </svg>
+                            </button>
+                            }
+
+                        </h5>
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+                                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+                            </svg> 
+                            @recipe.RecipeTime min
+                        
+                        @if (!recipe.ContaintsAlcohol) {
+                            <span class="badge bg-success">Mocktail</span>
+                        }
+                    </a>
+                    </div>
+                    </form>       
+            </div>  
+        </div>
+      }
+</div>
+
+<!-- Modal -->
+<form method="post">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Filter Recipes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group">
+            <li class="list-group-item">Recipe Type <br>
+                @foreach (var item in Model.recipeTypes)
+                {
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="@item.TypeName" name="recipeType" value="@item.TypeId">
+                        <label class="form-check-label" for="@item.TypeName">@item.TypeName</label>
+                    </div>
+                }
+            </li>
+            <li class="list-group-item">Flavour Profile <br>
+                @foreach (var item in Model.flavourProfiles)
+                {
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="@item.FlavourName" name="flavourProfile" value="@item.FlavourId">
+                        <label class="form-check-label" for="@item.FlavourName">@item.FlavourName</label>
+                    </div>
+                }
+            </li>
+            <li class="list-group-item">Difficulty <br>
+                @foreach (var item in Model.difficulties)
+                {
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="@item.DifficultyName" name="difficulty" value="@item.DifficultyId">
+                        <label class="form-check-label" for="@item.DifficultyName">@item.DifficultyName</label>
+                    </div>
+                }
+            </li>
+            <li class="list-group-item">Time <br>
+                Up to <input type="number" class="form-control w-25" id="number" name="time" min="@Model.minTime" max="@Model.maxTime" style="display: inline-block;"> minutes
+            </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form> 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
