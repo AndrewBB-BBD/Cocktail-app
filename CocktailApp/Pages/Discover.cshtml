@@ -39,8 +39,9 @@
                 <form method="post">
                 <div class="card-body">
                     <a class="recipe-text" asp-page-handler="ViewRecipe" asp-route-ID="@recipe.RecipeId"
+                    style = "text-decoration: none;"
                      >
-                        <h5 class="card-title" style="display: flex; justify-content: space-between; margin: 0">
+                        <h5 class="card-title" style="display: flex; justify-content: space-between; margin: 0; color: black">
                             @recipe.RecipeName 
 
                             @* RATING FEATURE NOT IMPLEMENTED YET: *@
@@ -66,7 +67,7 @@
 
                                 <button type="submit" class="btn btn-link" asp-page-handler="DeleteFromFavourites"
                                 asp-route-recipeID= "@recipe.RecipeId"
-                                style="padding: 0"> 
+                                style="padding: 0; background: none"> 
 
                                 <svg xmlns="http://www.w3.org/2000/svg" 
                                 width="30" height="30" viewBox="0 0 30 30" >
@@ -93,7 +94,7 @@
                             @* I tried to fill the heart here. Couldn't get it right. Just ended up using a seperate SVG of a different filled in heart. *@
 
                                 <button type="submit" class="btn btn-link" asp-page-handler="Favourite"
-                                asp-route-recipeID= "@recipe.RecipeId" style="padding: 0"> 
+                                asp-route-recipeID= "@recipe.RecipeId" style="padding: 0; background: none"> 
                                 <svg xmlns="http://www.w3.org/2000/svg"  
                                 width="30" height="30"  viewBox="0 0 25 25" fill="red">
                                 <defs>
