@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CocktailApp.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/css/favicon.png" type="image/x-icon" />
 </head>
 <body>
     <header>
@@ -31,11 +32,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Favourites">Favourites</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
                     </ul>
-                    <partial name="_LoginPartial" />
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Register">Register</a>
+                    <a class="nav-link text-dark" asp-area="" asp-page="/Login">Login</a>
                 </div>
             </div>
         </nav>
@@ -48,7 +47,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - CocktailApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - CocktailApp - You're Welcome
         </div>
     </footer>
 

@@ -1,6 +1,5 @@
-/*
+ï»¿/*
 Only run this script after createDBScript.sql
-
 Assumptions:
 We will have a check on the measurement table that when
 the value 'whole', 'part' or 'parts' are used it is not followed by 'of'
@@ -10,6 +9,13 @@ the value 'whole', 'part' or 'parts' are used it is not followed by 'of'
 
 USE cocktailDB;
 GO
+
+INSERT INTO UserLogin (userEmail, username, userPassword, salt) VALUES
+('test@test.com', 'andrewB', HASHBYTES('SHA2_512', 'AndrewBPassword'), NEWID()),
+('test1@test.com', 'andrewC', HASHBYTES('SHA2_512', 'AndrewCPassword'), NEWID()),
+('test2@test.com', 'andrewD', HASHBYTES('SHA2_512', 'AndrewDPassword'), NEWID()),
+('test3@test.com', 'andrewE', HASHBYTES('SHA2_512', 'AndrewEPassword'), NEWID()),
+('test4@test.com', 'andrewF', HASHBYTES('SHA2_512', 'AndrewFPassword'), NEWID());
 
 INSERT INTO Category (categoryName) VALUES
 ('Alcohol'),
@@ -169,7 +175,7 @@ INSERT INTO Recipe (flavourID, difficultyID, typeID, recipeName, recipeMethod, r
 (2, 1, 1, 'Angel Face', 'Pour all ingredients into cocktail shaker filled with ice cubes. Shake and strain into a chilled cocktail glass.', 'https://drive.google.com/file/d/15iLyGyt6fQBd20fRIYE0_IwXb3JxMGY1/view?usp=sharing', 1, 15),
 (3, 1, 1, 'Aviation', 'Add all ingredients into cocktail shaker filled with ice. Shake well and strain into cocktail glass. Garnish with a cherry.', 'https://drive.google.com/file/d/10KR3kK2OK4umGmA93TPYtzq2dlD04-hZ/view?usp=sharing', 1, 15),
 (3, 2, 1, 'Bees Knees', 'Stir honey syrup with lemon and orange juices until it dissolves, add gin and shake with ice. Strain into chilled cocktail glass', 'https://drive.google.com/file/d/1HubYa82zuxYN6_W1h3IpiEAB64oNXvK5/view?usp=sharing', 1, 20),
-(2, 2, 2, 'Bramble', 'Pour all ingredients into a cocktail shaker except the Crème de Mûre, shake well with ice, strain into chilled old fashioned glass filled with crushed ice, then pour the blackberry liqueur (Creme de Mure) over the top of the drink, in a circular motion.', 'https://drive.google.com/file/d/1ZEl4ZNAdDir4w1qMkn20QuLi6EZFMWCi/view?usp=sharing', 1, 20),
+(2, 2, 2, 'Bramble', 'Pour all ingredients into a cocktail shaker except the CrÃ¨me de MÃ»re, shake well with ice, strain into chilled old fashioned glass filled with crushed ice, then pour the blackberry liqueur (Creme de Mure) over the top of the drink, in a circular motion.', 'https://drive.google.com/file/d/1ZEl4ZNAdDir4w1qMkn20QuLi6EZFMWCi/view?usp=sharing', 1, 20),
 (4, 1, 1, 'Casino', 'Pour all ingredients into shaker with ice cubes. Shake well. Strain into chilled cocktail glass. Garnish with a lemon twist and a maraschino cherry. Serve without a straw.', 'https://drive.google.com/file/d/12yigKJ28B_ryQQ4m9oRIspSLfBYp6azB/view?usp=sharing', 1, 15),
 (2, 1, 1, 'Clover Club Cocktail', 'Dry shake ingredients to emulsify, add ice, shake and served straight up.', 'https://drive.google.com/file/d/1FCCxWqKwTzzNkjsXqvz_MRnuT-S70uwj/view?usp=sharing', 1, 15),
 (3, 1, 1, 'Corpse Reviver', 'Shake ingredients together in a mixer with ice. Strain into chilled glass. Garnish with orange zest.', 'https://drive.google.com/file/d/16XddQV1_9ReCK9OXe4HM4hRuJff-Uiro/view?usp=sharing', 1, 15),
@@ -194,15 +200,16 @@ INSERT INTO Recipe (flavourID, difficultyID, typeID, recipeName, recipeMethod, r
 (7, 1, 1, 'Sex on the Beach', 'Build all ingredients in a highball glass filled with ice. Garnish with orange slice.', 'https://drive.google.com/file/d/1UcS4iySKWatBcwNQ6n8dvxPD2rCIFyL8/view?usp=sharing', 1, 10),
 (1, 3, 2, 'Irish Coffee', 'Heat the coffee, whiskey and sugar; do not boil. Pour into glass and top with cream; serve hot.', 'https://drive.google.com/file/d/1Xvt54VBj2hiL4WrbPJES8-jY_sHbSDeG/view?usp=sharing', 1, 20),
 (3, 1, 1, 'Wiskey Sour', 'Shake with ice. Strain into chilled glass, garnish and serve.', 'https://drive.google.com/file/d/1L7OGjbdulOa7CBf-cR_6rgMFlhzrvsIG/view?usp=sharing', 1, 15),
-(2, 1, 4, 'Bellini', 'Pour peach purée into chilled glass, add sparkling wine. Stir gently.', 'https://drive.google.com/file/d/1GHD4obMR-_QdkhC7UipT5FSVrF7HB9La/view?usp=sharing', 1, 5),
+(2, 1, 4, 'Bellini', 'Pour peach purÃ©e into chilled glass, add sparkling wine. Stir gently.', 'https://drive.google.com/file/d/1GHD4obMR-_QdkhC7UipT5FSVrF7HB9La/view?usp=sharing', 1, 5),
 (7, 1, 4, 'Mimosa', 'Ensure both ingredients are well chilled, then mix into the glass. Serve cold.', 'https://drive.google.com/file/d/1g3JUxNJ6LhtVZKMVJCEsxxX73w4gWnSC/view?usp=sharing', 1, 5),
-(2, 1, 4, 'Kir', 'Add the crème de cassis to the bottom of the glass, then top up with wine.', 'https://drive.google.com/file/d/1RbKSZCcSqS5HTEDPxjz1zsn2KXrcLMhK/view?usp=sharing', 1, 5),
+(2, 1, 4, 'Kir', 'Add the crÃ¨me de cassis to the bottom of the glass, then top up with wine.', 'https://drive.google.com/file/d/1RbKSZCcSqS5HTEDPxjz1zsn2KXrcLMhK/view?usp=sharing', 1, 5),
 (2, 1, 1, 'Grasshopper', 'Pour ingredients into a cocktail shaker with ice. Shake briskly and then strain into a chilled cocktail glass.', 'https://drive.google.com/file/d/1F6bu1IjmFo5Mf8iXXhcpo04-a8af7kgk/view?usp=sharing', 1, 15),
 (5, 1, 1, 'Virgin Mary', 'Stirring gently, pour all ingredients into highball glass. Garnish.', 'https://drive.google.com/file/d/1V40pB-4WpqLvZKhDbiysjbUvY5Jqif_8/view?usp=sharing', 0, 15),
 (2, 2, 1, 'Virgin Colada', 'Blend all the ingredients with ice in an electric blender, pour into a large goblet or Hurricane glass and serve.', 'https://drive.google.com/file/d/18Q6R2s71smUu0IcTSJi-A342VkUCOSB_/view?usp=sharing', 0, 20),
 (3, 1, 2, 'Shirley Temple', 'Stir all the ingredients together and pour the mixture into an ice-filled glass.', 'https://drive.google.com/file/d/18D1ctXj5yUEacuVLInzLlZbYGEPGbdnQ/view?usp=sharing', 0, 10),
-(4, 2, 2, 'Lemon, lime and bitters', 'Rim the inside (and optionally outside) of the glass with 4 to 5 dashes of Angostura Bitters then pour lemonade and lime cordial (15–30 mL) into glass. Garnish with Lemon if desired. Has 0.2% alcohol.', 'https://drive.google.com/file/d/1rCykHeWL-4Jt6l0SI8QTeh3vviGkYv93/view?usp=sharing', 0, 15),
+(4, 2, 2, 'Lemon, lime and bitters', 'Rim the inside (and optionally outside) of the glass with 4 to 5 dashes of Angostura Bitters then pour lemonade and lime cordial (15Â–30 mL) into glass. Garnish with Lemon if desired. Has 0.2% alcohol.', 'https://drive.google.com/file/d/1rCykHeWL-4Jt6l0SI8QTeh3vviGkYv93/view?usp=sharing', 0, 15),
 (2, 1, 2, 'Roy Rogers', 'Mix the cola and grenadine syrup together. Pour into a glass filled with ice and garnish with a cherry.', 'https://drive.google.com/file/d/1DnoVjJ3CBak0LuY_UW3oRS-NCIG3NJLH/view?usp=sharing', 0, 5);
+
 
 INSERT INTO IngredientMeasurement (recipeID, ingredientID, measurementID, measurementAmount) VALUES
 (1, 1, 9, '35'),
@@ -374,3 +381,61 @@ INSERT INTO IngredientMeasurement (recipeID, ingredientID, measurementID, measur
 (45, 5, 4, '4'),
 (46, 52, 9, '125'),
 (46, 96, 9, '125');
+
+INSERT INTO Rating ( userEmail, recipeID, numStars, ratingComment) VALUES
+('test@test.com', 1, 4, 'Fabulous'),
+('test@test.com', 2, 2, 'Fabulous'),
+('test@test.com', 3, 4, 'Fabulous'),
+('test@test.com', 4, 3, 'Fabulous'),
+('test@test.com', 5, 3, 'Fabulous'),
+('test@test.com', 6, 4, 'Fabulous'),
+('test2@test.com', 1, 5, 'Fabulous'),
+('test2@test.com', 2, 2, 'Fabulous'),
+('test2@test.com', 3, 4, 'Fabulous'),
+('test2@test.com', 4, 3, 'Fabulous'),
+('test2@test.com', 5, 2, 'Fabulous'),
+('test2@test.com', 6, 4, 'Fabulous'),
+('test3@test.com', 1, 5, 'Fabulous'),
+('test3@test.com', 2, 2, 'Fabulous'),
+('test3@test.com', 3, 3, 'Fabulous'),
+('test3@test.com', 4, 3, 'Fabulous'),
+('test3@test.com', 5, 2, 'Fabulous'),
+('test3@test.com', 6, 4, 'Fabulous'),
+('test4@test.com', 1, 5, 'Fabulous'),
+('test4@test.com', 2, 2, 'Fabulous'),
+('test4@test.com', 3, 4, 'Fabulous'),
+('test4@test.com', 4, 3, 'Fabulous'),
+('test4@test.com', 6, 4, 'Fabulous'),
+('test@test.com', 7, 4, 'Fabulous'),
+('test@test.com', 8, 2, 'Fabulous'),
+('test@test.com', 9, 4, 'Fabulous'),
+('test@test.com', 10, 3, 'Fabulous'),
+('test@test.com', 11, 3, 'Fabulous'),
+('test2@test.com', 8, 5, 'Fabulous'),
+('test2@test.com', 9, 2, 'Fabulous'),
+('test2@test.com', 10, 4, 'Fabulous'),
+('test2@test.com', 11, 3, 'Fabulous'),
+('test2@test.com', 12, 2, 'Fabulous'),
+('test2@test.com', 13, 4, 'Fabulous'),
+('test3@test.com', 7, 5, 'Fabulous'),
+('test3@test.com', 8, 2, 'Fabulous'),
+('test3@test.com', 9, 3, 'Fabulous'),
+('test3@test.com', 10, 3, 'Fabulous'),
+('test3@test.com', 11, 2, 'Fabulous'),
+('test3@test.com', 12, 4, 'Fabulous'),
+('test4@test.com', 7, 5, 'Fabulous'),
+('test4@test.com', 8, 2, 'Fabulous'),
+('test4@test.com', 9, 4, 'Fabulous'),
+('test4@test.com', 10, 3, 'Fabulous'),
+('test4@test.com', 11, 4, 'Fabulous'),
+('test4@test.com', 12, 2, 'Fabulous');
+
+INSERT INTO Favourite (userEmail, recipeID) VALUES
+('test@test.com', 1),
+('test@test.com', 2),
+('test@test.com', 18),
+('test@test.com', 45),
+('test1@test.com', 13),
+('test2@test.com', 14),
+('test2@test.com', 16),
+('test4@test.com', 45);

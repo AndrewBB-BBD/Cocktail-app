@@ -13,7 +13,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddDbContext<cocktailDBContext>(options =>
 {
-	options.UseSqlServer(builder.Configuration.GetConnectionString("CocktailDB"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CocktailDB"));
+    options.EnableSensitiveDataLogging(true);
 });
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();

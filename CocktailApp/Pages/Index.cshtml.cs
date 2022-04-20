@@ -10,6 +10,7 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     private readonly cocktailDBContext _cocktailDBContext;
+    public string loggedInUser {get; set;} = "";
 
     public IndexModel(ILogger<IndexModel> logger, cocktailDBContext cocktailDBContext)
     {
@@ -85,5 +86,8 @@ public class IndexModel : PageModel
 
         return featuredRecipe;
 
+    public void OnGet(string userName)
+    {
+        loggedInUser = userName;
     }
 }
