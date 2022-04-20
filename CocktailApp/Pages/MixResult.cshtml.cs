@@ -24,15 +24,23 @@ public class MixResultModel : PageModel
     public List<IngredientMeasurement> fullIngredMeasList = new List<IngredientMeasurement>();
 
     public List<int> recIds = new List<int>();
+
+    public List<Rating> ratings = new List<Rating>();
+    public string noIngredientSelectedMsg = "";
  
 
     //method that gets the passed variable upon loading the page
     public async Task<IActionResult> OnGetAsync(List<int> userSelectedIds)
     {
         userSelectedIds = userSelectedIds;
+
+        if(!userSelectedIds.Any()) {
+            noIngredientSelectedMsg = "You have not selected any ingredients :(";
+        }
         
         fullIngredMeasList = await _cocktailDBContext.IngredientMeasurements.ToListAsync();
         fullRecipesList = await _cocktailDBContext.Recipes.ToListAsync();
+        ratings = _cocktailDBContext.Ratings.ToList();
 
         foreach(var item in userSelectedIds) {
 
