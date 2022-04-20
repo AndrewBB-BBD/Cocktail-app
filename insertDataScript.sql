@@ -412,7 +412,6 @@ INSERT INTO Rating ( userEmail, recipeID, numStars, ratingComment) VALUES
 ('test@test.com', 9, 4, 'Fabulous'),
 ('test@test.com', 10, 3, 'Fabulous'),
 ('test@test.com', 11, 3, 'Fabulous'),
-('test@test.com', 7, 4, 'Fabulous'),
 ('test2@test.com', 8, 5, 'Fabulous'),
 ('test2@test.com', 9, 2, 'Fabulous'),
 ('test2@test.com', 10, 4, 'Fabulous'),
