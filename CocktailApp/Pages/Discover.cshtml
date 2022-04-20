@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CocktailApp.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/css/favicon.png" type="image/x-icon" />
 </head>
 
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Search for a cocktail" aria-label="Search for a cocktail" aria-describedby="basic-addon2">
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-        </svg>
-    </button>
-  </div>
+<div class="input-group mb-3 col-12" id="discoverMenu" class="align-top">
+    <form method="post">
+        <input type="text" class="form-control" style="display: inline-block" placeholder="Search for a cocktail" aria-label="Search for a cocktail" aria-describedby="basic-addon2" name="searchTerm">
+        <div class="input-group-append align-top" style="display: inline; float: right;">    
+            <button id="searchBtn" class="btn btn-outline-secondary" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+    </form>
+
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#filterModal">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter-circle-fill" viewBox="0 0 16 16">
             <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM3.5 5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
         </svg>
     </button>
 </div>
+
+<h6>@Model.searchResults</h6>
 
 <div class="row">
       @foreach (var recipe in Model.recipesList) {
@@ -63,11 +69,11 @@
 
 <!-- Modal -->
 <form method="post">
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Filter Recipes</h5>
+        <h5 class="modal-title" id="filterModalLabel">Filter Recipes</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -78,7 +84,7 @@
                 @foreach (var item in Model.recipeTypes)
                 {
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="@item.TypeName" name="recipeType" value="@item.TypeId">
+                        <input class="form-check-input" type="checkbox" id="@item.TypeName" name="recipeType" value="@item.TypeId" checked="@(Model.selectedRecipeTypes.Contains(item.TypeId.ToString()))">
                         <label class="form-check-label" for="@item.TypeName">@item.TypeName</label>
                     </div>
                 }
@@ -87,7 +93,7 @@
                 @foreach (var item in Model.flavourProfiles)
                 {
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="@item.FlavourName" name="flavourProfile" value="@item.FlavourId">
+                        <input class="form-check-input" type="checkbox" id="@item.FlavourName" name="flavourProfile" value="@item.FlavourId" checked="@(Model.selectedFlavourProfiles.Contains(item.FlavourId.ToString()))">
                         <label class="form-check-label" for="@item.FlavourName">@item.FlavourName</label>
                     </div>
                 }
@@ -96,18 +102,18 @@
                 @foreach (var item in Model.difficulties)
                 {
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="@item.DifficultyName" name="difficulty" value="@item.DifficultyId">
+                        <input class="form-check-input" type="checkbox" id="@item.DifficultyName" name="difficulty" value="@item.DifficultyId" checked="@(Model.selectedDifficulties.Contains(item.DifficultyId.ToString()))">
                         <label class="form-check-label" for="@item.DifficultyName">@item.DifficultyName</label>
                     </div>
                 }
             </li>
             <li class="list-group-item">Time <br>
-                Up to <input type="number" class="form-control w-25" id="number" name="time" min="@Model.minTime" max="@Model.maxTime" style="display: inline-block;"> minutes
+                Up to <input type="number" class="form-control w-25" id="number" name="time" min="@Model.minTime" max="@Model.maxTime" value="@Model.maxTime" style="display: inline-block;"> minutes
             </li>
         </ul>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-secondary" name="reset">Reset</button>
         <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
     </div>
