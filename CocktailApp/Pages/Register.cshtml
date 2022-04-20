@@ -1,0 +1,66 @@
+@page
+@using CocktailApp.Model
+@model RegisterModel
+
+<div class="container border" style="padding:40px;max-width:90%;margin-top: 2em;">
+  <h4>Please Use The Form Below To Register: </h4>
+  <br>
+  <form method="post">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+    <div class="form-group row" style="margin-bottom: 0.8em;">
+      <div class="col-2">
+        <label asp-for="RegisterCredential.Email"></label>
+      </div>
+      <div class="col-5">
+        <input type="text" asp-for="RegisterCredential.Email" class="form-control"/>
+        <span class="text-danger" asp-validation-for="RegisterCredential.Email"></span>
+      </div>
+      @if (Model.emailExists)
+      {
+        <div>
+          <span class="text-danger">User Email Already Exists!</span>
+        </div>
+      }
+    </div>
+    <div class="form-group row" style="margin-bottom: 0.8em;">
+      <div class="col-2">
+        <label asp-for="RegisterCredential.UserName"></label>
+      </div>
+      <div class="col-5">
+        <input type="text" asp-for="RegisterCredential.UserName" class="form-control"/>
+        <span class="text-danger" asp-validation-for="RegisterCredential.UserName"></span>
+      </div>
+      @if (Model.userNameExists)
+      {
+        <div>
+          <span class="text-danger">User Name Already Exists!</span>
+        </div>
+      }
+    </div>
+    <div class="form-group row" style="margin-bottom: 0.8em;">
+      <div class="col-2">
+        <label asp-for="RegisterCredential.Password"></label>
+      </div>
+      <div class="col-5">
+        <input type="password" asp-for="RegisterCredential.Password" class="form-control"/>
+        <span class="text-danger" asp-validation-for="RegisterCredential.Password"></span>
+      </div>
+    </div>
+    <div class="form-group row" style="margin-bottom: 0.8em;">
+      <div class="col-2">
+        <label asp-for="RegisterCredential.PasswordConfirmation"></label>
+      </div>
+      <div class="col-5">
+        <input type="password" asp-for="RegisterCredential.PasswordConfirmation" class="form-control"/>
+        <span class="text-danger" asp-validation-for="RegisterCredential.PasswordConfirmation"></span>
+      </div>
+    </div>
+    <br>
+    <div class="form-group row" style="margin-bottom: 0.8em;">
+      <div class="col-2">
+        <input type="submit" class="btn btn-primary" value="Register" />
+        <button type="button" class="btn btn-warning"><a style="text-decoration:none;color:white;" asp-page="/Index">Cancel</a></button>
+      </div>
+    </div>
+  </form>
+</div>
