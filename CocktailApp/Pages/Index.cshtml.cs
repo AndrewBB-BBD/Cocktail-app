@@ -32,6 +32,11 @@ public class IndexModel : PageModel
         GetFeatured();
     }
 
+    public IActionResult OnGetViewRecipe(int ID, string URL)
+    {
+        return RedirectToPage("Recipe", new { recipeID = ID });
+    }
+
     public List<Recipe> GetPopularRecipes()
     {
         foreach (var recipe in recipesList)
@@ -76,26 +81,9 @@ public class IndexModel : PageModel
 
     public Recipe GetFeatured()
     {
-        Random rnd = new Random();
+        int today = DateTime.Now.DayOfYear;
 
-        String path = AppDomain.CurrentDomain.BaseDirectory + @"OfTheDay";
-
-        int temprand = rnd.Next(0, popuarList.Count());
-
-        while(System.IO.File.ReadAllText(path).Length != 0 && int.Parse(System.IO.File.ReadAllText(path)) == temprand)
-        {
-            temprand = rnd.Next(1, popuarList.Count());
-        }
-
-        System.IO.File.WriteAllText(path, temprand.ToString());
-
-        var tempRecipe = new Recipe();
-
-        tempRecipe = popuarList[temprand];
-
-        //tempRecipe.RecipeId = int.Parse(System.IO.File.ReadAllText(path));
-
-        featuredRecipe = _cocktailDBContext.Recipes.Find(tempRecipe.RecipeId);
+        featuredRecipe = _cocktailDBContext.Recipes.Find(recipesList[today % recipesList.Count].RecipeId);
 
         return featuredRecipe;
 
