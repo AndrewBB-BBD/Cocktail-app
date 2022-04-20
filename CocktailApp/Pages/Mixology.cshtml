@@ -8,16 +8,11 @@
 }
 
 <h3>Mixology</h3>
-<h5>Select all the ingredients you want to use and we tell you if such a recipe exists.</h5> 
-<i><p><b>Tip:</b> to get more recipe results you should select less ingredients.</p></i>
+<h5>You choose the ingredients and we show you all the cocktail recipes that contain at least one of them</h5> 
+<i><p><b>Tip:</b> to get less recipe results you should select less ingredients.</p></i>
 
 <form method="post">
 <div class="accordion" id="accordionExample">
-    @foreach (var ingredient in Model.selectedIngredients) {
-        <button type="button" class="btn btn-primary">
-        @ingredient.IngredientName
-        </button>
-    }
 
     @foreach (var category in Model.categoriesList) {
         <div class="accordion-item">
@@ -31,7 +26,7 @@
                 <div class="list-group">
                     @foreach (var ingredient in Model.ingredientsList.Where(i => i.CategoryId == category.CategoryId)) {
                         <label class="list-group-item">
-                            <input class="form-check-input me-1" name="@ingredient.IngredientId" asp-for="IsChecked" asp-route-id="@ingredient.IngredientId"/> @ingredient.IngredientName.ToLower()
+                            <input type="checkbox" class="form-check-input me-1" name="@ingredient.IngredientId"/> @ingredient.IngredientName.ToLower()
                         </label>
                     }
                 </div>
@@ -39,7 +34,10 @@
         </div>
         </div>
     }
-    <input type="submit" value="Find cocktail"/>
+    <div class="mixologyBtn">
+        <input type="submit" value="Find cocktail" class="btn"/>
+    </div>
+    
 </div>
         
 </form>

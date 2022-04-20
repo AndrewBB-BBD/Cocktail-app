@@ -52,15 +52,6 @@ body {
   height: 50px;
 }
 
-#mixologyBtn {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 .MixResultHeading {
   margin-bottom: 40px;
 }
@@ -92,19 +83,19 @@ body {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+  background-color: blue;
   cursor: pointer;
+  color: white;
 }
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+  background-color: darkblue;
+  color: white;
 }
 
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
+.mixologyBtn {
+  margin-top: 20px;
 }
 
 /* Mixology CSS end */

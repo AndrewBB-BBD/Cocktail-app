@@ -3,7 +3,6 @@ using CocktailApp.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
 namespace CocktailApp.Pages;
  
 public class MixologyModel : PageModel
@@ -17,7 +16,8 @@ public class MixologyModel : PageModel
     public List<Category> categoriesList = new List<Category>();
     public List<Ingredient> ingredientsList = new List<Ingredient>();
     public List<Ingredient> selectedIngredients = new List<Ingredient>();
-    public bool IsChecked { get; set; }
+
+    public List<int> checkedIngredientIds = new List<int>();
  
     public async Task<IActionResult> OnGetAsync()
     {
@@ -26,13 +26,22 @@ public class MixologyModel : PageModel
         return Page();
     }
 
-//method called when "find coctail" button clicked
-     public IActionResult OnPost()
+    public async Task<IActionResult> OnPost()
     {
-        //gets a string that represents all the check boxes and their values
-        string results = Request.Form["isChecked"];
-        //redirect to page with string
-        return RedirectToPage("./MixResult", results);
+        ingredientsList = await _cocktailDBContext.Ingredients.ToListAsync();
+
+        foreach(var item in ingredientsList) 
+        {
+
+        if (Request.Form[item.IngredientId.ToString()] == "on")
+        {
+            //add ingredient IDs that were checked
+            checkedIngredientIds.Add(item.IngredientId);
+        }
+        }
+
+        //Redirect to MixResult with IDs of ingredients user selected
+        return RedirectToPage("/MixResult", new {userSelectedIds = checkedIngredientIds});
     }
 
 }
