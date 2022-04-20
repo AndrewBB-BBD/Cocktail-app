@@ -11,20 +11,6 @@ the value 'whole', 'part' or 'parts' are used it is not followed by 'of'
 USE cocktailDB;
 GO
 
-INSERT INTO Rating ( userEmail, recipeID, numStars, ratingComment) VALUES
-('test@test.com', 1, 4, 'Fabulous');
-
-INSERT INTO Favourite (userEmail, recipeID) VALUES
-('test@test.com', 1),
-('test@test.com', 2),
-('test@test.com', 18),
-('test@test.com', 45),
-('test1@test.com', 13),
-('test2@test.com', 14),
-('test2@test.com', 16),
-('test4@test.com', 45);
-
-
 INSERT INTO UserLogin (userEmail, username, userPassword, salt) VALUES
 ('test@test.com', 'andrewB', HASHBYTES('SHA2_512', 'AndrewBPassword'), NEWID()),
 ('test1@test.com', 'andrewC', HASHBYTES('SHA2_512', 'AndrewCPassword'), NEWID()),
@@ -396,3 +382,16 @@ INSERT INTO IngredientMeasurement (recipeID, ingredientID, measurementID, measur
 (45, 5, 4, '4'),
 (46, 52, 9, '125'),
 (46, 96, 9, '125');
+
+INSERT INTO Rating ( userEmail, recipeID, numStars, ratingComment) VALUES
+('test@test.com', 1, 4, 'Fabulous');
+
+INSERT INTO Favourite (userEmail, recipeID) VALUES
+('test@test.com', 1),
+('test@test.com', 2),
+('test@test.com', 18),
+('test@test.com', 45),
+('test1@test.com', 13),
+('test2@test.com', 14),
+('test2@test.com', 16),
+('test4@test.com', 45);
