@@ -21,7 +21,6 @@ public class IndexModel : PageModel
     public List<Recipe> popuarList = new List<Recipe>();
     public List<Rating> ratingList = new List<Rating>();
     public Recipe featuredRecipe = new Recipe();
-    public List<RecipeType> recipeTypeList = new List<RecipeType>();
 
     public void OnGet()
     {

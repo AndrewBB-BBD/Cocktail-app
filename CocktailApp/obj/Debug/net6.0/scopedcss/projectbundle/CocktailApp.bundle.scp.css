@@ -1,4 +1,35 @@
 /* _content/CocktailApp/Pages/index.cshtml.rz.scp.css */
+.container[b-0omfx77k9t] {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.jumbotron img[b-0omfx77k9t]{
+    height: 20rem;
+    width: 20rem;
+    float: left;
+}
+
+.leftcontent[b-0omfx77k9t] {
+    width: 50%;
+    float: left;
+}
+
+.rightcontent[b-0omfx77k9t] {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+
+.rightcontent h3[b-0omfx77k9t] {
+    margin-bottom: 2rem;
+}
+
+.rightcontent span[b-0omfx77k9t] {
+    padding: 3rem;
+}
+
 .cards-wrapper[b-0omfx77k9t] {
     display: flex;
     justify-content: flex-start;
