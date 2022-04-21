@@ -37,8 +37,8 @@ public class RegisterModel : PageModel
             UserLogin user = new UserLogin{
                 UserEmail = RegisterCredential.Email,
                 Username = RegisterCredential.UserName,
-                UserPassword = EncodeTo64(RegisterCredential.Password + salt), //convert to byte64() + UUID for password storage.
-                Salt = salt //Generate UUID before this point
+                UserPassword = EncodeTo64(RegisterCredential.Password + salt),
+                Salt = salt
             };
             _cocktailDBContext.UserLogins.Add(user);
             _cocktailDBContext.SaveChanges();

@@ -11,18 +11,15 @@ public class IndexModel : PageModel
     private readonly ILogger<IndexModel> _logger;
     private readonly cocktailDBContext _cocktailDBContext;
     public string loggedInUser { get; set; } = "";
-
     public IndexModel(ILogger<IndexModel> logger, cocktailDBContext cocktailDBContext)
     {
         _logger = logger;
         _cocktailDBContext = cocktailDBContext;
     }
-
     public List<Recipe> recipesList = new List<Recipe>();
     public List<Recipe> popuarList = new List<Recipe>();
     public List<Rating> ratingList = new List<Rating>();
     public Recipe featuredRecipe = new Recipe();
-
     public void OnGet(string userName)
     {
         recipesList = _cocktailDBContext.Recipes.ToList();
@@ -31,12 +28,10 @@ public class IndexModel : PageModel
         GetFeatured();
         loggedInUser = userName;
     }
-
     public IActionResult OnGetViewRecipe(int ID, string URL)
     {
         return RedirectToPage("Recipe", new { recipeID = ID });
     }
-
     public List<Recipe> GetPopularRecipes()
     {
         foreach (var recipe in recipesList)
@@ -46,9 +41,7 @@ public class IndexModel : PageModel
             string imageURL = "https://drive.google.com/uc?id=" + recipe.RecipeImage.Substring(start, end - start);
             recipe.RecipeImage = imageURL;
         }
-
         Dictionary<Recipe, Double> recipeAvrg = new Dictionary<Recipe, Double>();
-
         foreach (var recipe in recipesList)
         {
             var ratingList = recipe.Ratings.ToList();
@@ -64,14 +57,12 @@ public class IndexModel : PageModel
                 recipeAvrg.Add(recipe, averageRating);
             }
         }
-
         foreach (KeyValuePair<Recipe, Double> recipe in recipeAvrg.OrderByDescending(key => key.Value))
         {
             if (popuarList.Count >= 15)
             {
                 break;
             }
-
             if (recipe.Value >= 4)
             {
                 popuarList.Add(recipe.Key);
@@ -79,14 +70,10 @@ public class IndexModel : PageModel
         }
         return popuarList;
     }
-
     public Recipe GetFeatured()
     {
         int today = DateTime.Now.DayOfYear;
-
         featuredRecipe = _cocktailDBContext.Recipes.Find(recipesList[today % recipesList.Count].RecipeId);
-
         return featuredRecipe;
-
     }
 }

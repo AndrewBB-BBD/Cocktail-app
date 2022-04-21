@@ -12,36 +12,27 @@ public class MixologyModel : PageModel
     {
         _cocktailDBContext = cocktailDBContext;
     }
-
     public List<Category> categoriesList = new List<Category>();
     public List<Ingredient> ingredientsList = new List<Ingredient>();
     public List<Ingredient> selectedIngredients = new List<Ingredient>();
-
     public List<int> checkedIngredientIds = new List<int>();
- 
     public async Task<IActionResult> OnGetAsync()
     {
         categoriesList = await _cocktailDBContext.Categories.ToListAsync();
         ingredientsList = await _cocktailDBContext.Ingredients.ToListAsync();
         return Page();
     }
-
     public async Task<IActionResult> OnPost()
     {
         ingredientsList = await _cocktailDBContext.Ingredients.ToListAsync();
 
         foreach(var item in ingredientsList) 
         {
-
-        if (Request.Form[item.IngredientId.ToString()] == "on")
-        {
-            //add ingredient IDs that were checked
-            checkedIngredientIds.Add(item.IngredientId);
+            if (Request.Form[item.IngredientId.ToString()] == "on")
+            {
+                checkedIngredientIds.Add(item.IngredientId);
+            }
         }
-        }
-
-        //Redirect to MixResult with IDs of ingredients user selected
         return RedirectToPage("/MixResult", new {userSelectedIds = checkedIngredientIds});
     }
-
 }
